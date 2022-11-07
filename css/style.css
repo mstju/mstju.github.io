@@ -1,0 +1,161 @@
+*{margin:0; padding:0; box-sizing: border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', 'sans-serif' ;
+}
+
+.header {
+    background-color: rgb(114, 20, 20);
+    height: 85px;
+    position: relative;
+}
+
+.logo {
+    width: 130px;
+    position: absolute;
+    top: -16px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 60px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar ul {
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 500px;
+}
+
+.btn {
+    position: absolute;
+    letter-spacing: 2px;
+    top: 20px;
+    right: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+    transition: 0.8s;
+}
+
+.pesquisa {
+    background-color: #ccc;
+    width: 800px;
+    height: 750px;
+    overflow: auto;
+}
+
+.pesquisa p {
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.pic {
+    width: 100%;
+    background-image: url(../imagens/woman.jpg);
+    background-size: cover;
+
+}
+
+.search-btn {
+    padding: 13px;
+}
+
+.pesquisa input {
+    width: 500px;
+    padding: 25px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.barra {
+    height: 80px;
+    font-size: 36px;
+    background-color: rgb(124, 124, 124);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    background-color: #ccc;
+    width: 100%;
+    height: 600px;
+}
+
+.card {
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+    width: 400px;
+    height: 400px;
+    background-color: #202020;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 40px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.loja {
+    background-image: url(/imagens/roupas.jpg);
+}
+
+.quiosque {
+    background-image: url(/imagens/quiosque.jpeg);
+}
+
+.food {
+    background-image: url(/imagens/food.jpg);
+}
+
+.box {
+    background-image: url(/imagens/box.jpg);
+}
+
+footer {
+    background-color: rgb(114, 20, 20);
+    height: 170px;
+    padding: 20px;
+
+}
+
+footer ul li {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
