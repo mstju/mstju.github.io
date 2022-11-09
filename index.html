@@ -6,29 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SobreLoja</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/774959753e.js" crossorigin="anonymous"></script>
-    </head>
+    <script src="./app.js"></script>
+</head>
 <body>
 
 <header class="header">
     <nav class="navbar">
         <img src="/imagens/logo.png" alt="logotipo" class="logo">
-            <ul>
-                <li><a href="#">Buscar Loja</a></li>
-                <li><a href="#">para Proprietários</a></li>
-                <li><a href="#">Para Imobiliárias</a></li>
-            </ul>
+                <a class="navbar-links" href="#">Buscar Loja</a>
+                <a class="navbar-links" href="#">para Proprietários</a>
+                <a class="navbar-links" href="#">Para Imobiliárias</a>
+                <button onclick="redirect()" class="btn" type="button"><i class="fa-solid fa-right-to-bracket">  Entrar</i></a></button>
     </nav>
-    <button class="btn" type="button"><i class="fa-solid fa-right-to-bracket"><a target="_blank" href="/pages/login.html">  Entrar</i></a></button>
 </header>
 
     <div class="container">
 
         <section class="pesquisa">
-            <p>Encontre a loja dos seus sonhos!</p>
-            <select id = 'cidade'>
-                <option value="São Paulo">São Paulo</option>
-            </select>
+            <p>Encontre a loja dos seus sonhos</p>
             <i class="fa-solid fa-location-dot search-btn" ></i> <input type="text" placeholder="Cidade (Busque por Cidade)" > <br>
             <i class="fa-solid fa-house search-btn"></i> <input type="text" placeholder="Bairro (Busque por Bairro)" ><br>
             <i class="fa-regular fa-money-bill-1 search-btn"></i> <input type="text" placeholder="Valor (Busque por Valor)" ><br>
@@ -67,6 +62,7 @@
     </div>
 
     <footer>
+
         <p style="text-decoration:underline; font-size: 26px;">Sobre nós</p>
         <ul>
             <li><a href="#">Conheça o SobreLoja</a></li>
