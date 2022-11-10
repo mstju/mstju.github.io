@@ -1,3 +1,7 @@
+function redirect(){
+    window.open('/pages/login.html', '_blank'); 
+}
+
 (async function(){
     try{    
         const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos')
