@@ -89,9 +89,15 @@ body {
     background-color: #ccc;
     width: 800px;
     height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.opcao p {
+.container-title {
+    top: 0;
+    position: absolute;
     font-weight: bold;
     font-size: 25px;
     text-align: center;
@@ -101,15 +107,14 @@ body {
 
 #seletores{
     margin-top: 20px;
-
 }
 
 .selecao{
     width: 450px;
     height: 50px;
     margin-top: 10px;
-    margin-left: 25px;
     border-radius: 6px;
+    padding: 10px;
 }
 
 #botaoBuscar{
@@ -169,96 +174,67 @@ body {
 }
 
 
-.gallery {
-    display: flex;
-    justify-content: center;
-    background-color: #ccc;
+.cards {
     width: 100%;
-    height: 500px;
+    background-color: blue;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #ccc;
 }
 
 .card {
+    width: 23%;
+    height: 450px;
     -webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
-    width: 400px;
-    height: 400px;
-    background-color: #202020;
     border-radius: 25px;
-    margin-top: 50px;
-    margin-left: 40px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
     
 }
 
 .loja {
     background-image: url(/imagens/roupas.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .quiosque {
     background-image: url(/imagens/quiosque.jpeg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .food {
     background-image: url(/imagens/food.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 
 .box {
     background-image: url(/imagens/box.jpg);
-}
-
-footer {
-    background-color: rgb(114, 20, 20);
-    height: 170px;
-    padding: 20px;
+    background-size: cover;
+    background-position: center;
 
 }
 
-footer ul li {
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-footer ul li a {
-    color: black;
-    text-decoration: none;
-}
 
 .card-title {
+    text-transform: uppercase;
     color: #000;
     width: 400px;
-    margin-top: -30px;
+    margin-top: -35px;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
 
 }
 
-#main {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    width: 35%;
-    background-color: white;
-    margin-top: 40px;
-    height: 600px;
-    border-radius: 20px;
-    position: relative;
-}
-
-.logo-login {
-    margin-top: 20px;
-    width: 250px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-}
-
-#login-body {
-    font-family: 'Poppins', 'sans-serif' ;
-    background: rgb(185,32,32);
-    background: linear-gradient(90deg, rgba(185,32,32,1) 0%, rgba(143,25,25,1) 48%, rgba(101,0,0,1) 100%);
-}
 
 .welcome-title {
     margin-top: 10px;
@@ -288,3 +264,20 @@ label {
     margin-top: 20px;
 }
 
+
+footer {
+    background-color: rgb(114, 20, 20);
+    height: 170px;
+    padding: 20px;
+
+}
+
+footer ul li {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
