@@ -16,25 +16,24 @@
 
                 <form>
                     <div>
-                        <div><label>Email</label></div> <br>
-                        <input type="email" name="email" placeholder="E-mail">
+                        <div class="label"><label>Email</label></div> <br>
+                        <input type="email" name="email" id="email" onchange="validateFields()" placeholder="E-mail">
                     </div>
                     <div>
-                        <div><label>Senha</label> <br>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <div class="label"><label>Senha</label> <br>
+                        <input type="password" name="senha" id="senha" onchange="validateFields()" placeholder="Senha">
                     </div>
                     <div>
-                        <input class="button" type="button" value="Recuperar Senha">
-                        </div>
+                        <button id="recuperar" type="button" disabled="true">Recuperar Senha</button><br>
+                    </div>
                     <div>
-                    <input class="button" type="button" value="Entrar">
+                    <button id="entrar" type="button" disabled="true">Entrar</button><br>
                     </div>
                 </form>
                 <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
         </div>
     </section>
 </div>
-
 <script src="../login.js"></script>
 </body>
 </html>

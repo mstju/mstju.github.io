@@ -33,15 +33,61 @@ body {
     width: 100%;
 }
 
-.login input {
-    padding: 20px;
+.label{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+#email {
+    padding: 5px;
     background-color: rgb(226, 226, 226);
-    margin-top: 20px;
+    margin-top: 10px;
     height: 40px;
     border-radius: 7px;
     border: none;
     outline: none;
     color: rgb(83, 83, 83);
+    width: 250px;
+}
+
+#senha {
+    padding: 5px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: rgb(83, 83, 83);
+    width: 250px;
+}
+
+#recuperar{
+    margin-top: 40px;
+    width: 130px;
+    height:30px;
+    border-radius: 6px;
+    background-color: rgb(114, 20, 20);
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+button[disabled]{
+    opacity: 0.7;
+}
+
+#entrar{
+    margin-top: 10px;
+    width: 130px;
+    height:28px;
+    border-radius: 6px;
+    background-color: rgb(114, 20, 20);
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: bold;
 }
 
 .login img {
@@ -72,5 +118,5 @@ a {
 
 p {
     font-size: 17px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
