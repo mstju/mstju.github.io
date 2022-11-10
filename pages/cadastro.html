@@ -17,7 +17,7 @@
                 <form class="form" id="form">
                     <div class="form-control">
                         <label for="username">Nome Completo</label> <br>
-                        <input id="username" type="text" name="nome" placeholder="Nome / Sobrenome">
+                        <input id="username" type="text" name="nome" placeholder="Nome / Sobrenome" required>
                         <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
                         <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
 
@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-control">
                         <label for="email">Email</label> <br>
-                        <input id="email" type="email" name="email" placeholder="E-mail">
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
                         <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
                         <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
 
@@ -34,7 +34,7 @@
                     
                     <div class="form-control">
                         <label for="password">Senha</label> <br>
-                        <input id="password" type="password" name="senha" placeholder="Senha">
+                        <input id="password" type="password" name="senha" placeholder="Senha" required>
                         <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
                         <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
 
@@ -43,7 +43,7 @@
                     </div>
                     <div class="form-control">
                         <label for="passwordConfirm">Confirme sua Senha</label><br>
-                        <input id="passwordConfirm" type="password" name="confirmaçãoSenha" placeholder="Confirmação de Senha">
+                        <input id="passwordConfirm" type="password" name="confirmaçãoSenha"  placeholder="Confirmação de Senha" required>
                         <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
                         <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
 
@@ -53,6 +53,8 @@
                        <button type="submit">CADASTRAR</button>
                     </div>
 
+
+
                     <div>
                         <p>Já possui uma conta? <a href="login.html">Entre aqui</a></p>
                     </div>
@@ -60,6 +62,25 @@
                 
         </div>
     </section>
+
+
 </div>
+
+<script>
+    var formulario = document.querySelector('form');
+
+formulario.onsubmit = function(){
+   if(!document.querySelector("input[type='email']").value){
+      alert("Campo email vazio!");
+      return false;
+   }
+   
+   alert("Login feito com sucesso");
+} 
+</script>
 </body>
+
+
+
+
 </html>
