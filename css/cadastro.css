@@ -1,6 +1,10 @@
 *{     margin: 0;     padding: 0;     outline: 0;     box-sizing: border-box; }
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Merriweather', serif;
     background: rgb(185,32,32);
     background: linear-gradient(90deg, rgba(185,32,32,1) 0%, rgba(143,25,25,1) 48%, rgba(101,0,0,1) 100%);
@@ -8,62 +12,124 @@ body {
 
 .cadastro-area {
     display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;   
+    border-radius: 5px;
+    max-width: 100%;
+    align-items: center; 
+    justify-content: center;  
+    height: 600px;
 }
 
 .cadastro {
     background-color: #fff;
     padding: 40px;
     width: 400px;
-    height: 500px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 10px;
     -webkit-box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
 }
 
-.cadastro form {
+.form {
+    padding: 0 40px 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.cadastro input {
-    padding: 20px;
-    background-color: rgb(226, 226, 226);
-    margin-top: 20px;
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: black;
+    
+}
+
+.form-control input {
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: -20px;
     height: 40px;
-    border-radius: 7px;
-    border: none;
-    outline: none;
-    color: rgb(83, 83, 83);
+}
+
+form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.success i.img-success {
+    visibility: visible;
+}
+
+.form-control.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
 }
 
 .cadastro img {
     width: 150px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-input::placeholder {
+input:placeholder {
     padding-left: 10px;
 }
 
-form [type="submit"] {
-    margin-top: 25px;
-    cursor: pointer;
+.form button {
     background-color: rgb(151, 11, 11);
+    border-radius: 5px;
     color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    height: 50px;
-    font-weight: bold;
-    letter-spacing: 3px;
-
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
 }
+
+form button:hover {
+    background-color: rgb(155, 82, 82);
+    transition: 0.3s;
+}
+
 
 a {
     color: rgb(151, 11, 11);
@@ -72,5 +138,6 @@ a {
 
 p {
     font-size: 17px;
-    margin-top: 50px;
+    margin-top: 490px;
+    margin-left: -310px;
 }

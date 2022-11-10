@@ -14,13 +14,50 @@
                     <img src="/imagens/logo-black.png" alt="">
                 </div>
 
-                <form>
-                    <input type="text" name="nome" placeholder="Nome e Sobrenome">
-                    <input type="text" name="email" placeholder="E-mail">
-                    <input type="password" name="senha" placeholder="Senha">
-                    <input type="submit" value="cadastrar">
+                <form class="form" id="form">
+                    <div class="form-control">
+                        <label for="username">Nome Completo</label> <br>
+                        <input id="username" type="text" name="nome" placeholder="Nome / Sobrenome">
+                        <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
+                        <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
+
+                        <small>Error Mesage</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label> <br>
+                        <input id="email" type="email" name="email" placeholder="E-mail">
+                        <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
+                        <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
+
+                        <small>Error Mesage</small>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label for="password">Senha</label> <br>
+                        <input id="password" type="password" name="senha" placeholder="Senha">
+                        <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
+                        <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
+
+                        <small>Error Mesage</small>
+                    
+                    </div>
+                    <div class="form-control">
+                        <label for="passwordConfirm">Confirme sua Senha</label><br>
+                        <input id="passwordConfirm" type="password" name="confirmaçãoSenha" placeholder="Confirmação de Senha">
+                        <i><img src="/imagens/success-icon.svg" alt="ícone de acerto"></i>
+                        <i><img src="/imagens/error-icon.svg" alt="ícone de erro"></i>
+
+                        <small>Error Mesage</small>
+                    
+                    </div>
+                       <button type="submit">CADASTRAR</button>
+                    </div>
+
+                    <div>
+                        <p>Já possui uma conta? <a href="login.html">Entre aqui</a></p>
+                    </div>
                 </form>
-                <p>Já possui uma conta? <a href="login.html">Entre aqui</a></p>
+                
         </div>
     </section>
 </div>
