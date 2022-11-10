@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Merriweather', serif;
+    
 }
 
 
@@ -177,7 +178,6 @@ body {
 
 .cards {
     width: 100%;
-    background-color: blue;
     height: 600px;
     display: flex;
     justify-content: space-between;
@@ -228,7 +228,6 @@ body {
 .card-title {
     text-transform: uppercase;
     color: #000;
-    width: 400px;
     margin-top: -35px;
     text-align: center;
     font-size: 23px;
