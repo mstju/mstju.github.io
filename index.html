@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SobreLoja</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
 
 <header class="header">
-    <nav class="navbar">
+    <nav class="navbar"> 
         <img src="/imagens/logo.png" alt="logotipo" class="logo">
                 <a class="navbar-links" href="#">Buscar Loja</a>
                 <a class="navbar-links" href="#">para Proprietários</a>
                 <a class="navbar-links" href="#">Para Imobiliárias</a>
-                <button onclick="redirect()" class="btn" type="button"><i class="fa-solid fa-right-to-bracket">  Entrar</i></a></button>
+                <button onclick="redirect()" class="btn" type="button">Entrar</a></button>
     </nav>
 </header>
 
@@ -100,15 +102,32 @@
 
     </section>
 
-    <footer>
-
-        <p style="text-decoration:underline; font-size: 26px;">Sobre nós</p>
-        <ul>
-            <li><a href="#">Conheça o SobreLoja</a></li>
-            <li><a href="#">Regiões Atendidas</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </footer>
+    <footer class="footer">
+        <div class="conteudo">
+            
+                <div class="footer-section">
+                    <h3>Sobre Nós</h3>
+                    <ul>
+                        <li><a href="#">Conheça o SobreLoja</a></li>
+                        <li><a href="#">Regiões Atendidas</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+   
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                
+ 
+            </div>
+        </div>
+   </footer>
 
     <script src="script.js" defer></script>
 </body>

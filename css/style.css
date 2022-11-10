@@ -1,9 +1,10 @@
-*{margin:0; padding:0; box-sizing: border-box;}
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{     margin: 0;     padding: 0;     outline: 0;     box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 body {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Merriweather', serif;
 }
+
 
 .header {
     background-color: rgb(114, 20, 20);
@@ -264,20 +265,3 @@ label {
     margin-top: 20px;
 }
 
-
-footer {
-    background-color: rgb(114, 20, 20);
-    height: 170px;
-    padding: 20px;
-
-}
-
-footer ul li {
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-footer ul li a {
-    color: black;
-    text-decoration: none;
-}
