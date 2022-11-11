@@ -1,6 +1,9 @@
+
+// função que faz abrir o link em outra aba
 function redirect(){
     window.open('/pages/login.html', '_blank'); 
 }
+
 
 (async function(){
     try{    
