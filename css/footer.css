@@ -21,6 +21,9 @@ ul{
     padding: 35px 0;
 }
 
+.footer-section {
+	min-width: 20%;
+}
 
 .footer-section h3{
 	font-size: 18px;
