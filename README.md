@@ -1,2 +1,1 @@
-# mstju.github.io
- projeto
+Projeto Tera - E-Commerce
