@@ -71,27 +71,6 @@ html {height: 100%;}
     height: 40px;
 }
 
-form-control.success input {
-    border: 3px solid #4ECA64;
-}
-
-.form-control.error input {
-    border: 3px solid #DB5A5A;
-}
-
-.form-control.error i.img-error {
-    visibility: visible;
-}
-
-.form-control.success i.img-success {
-    visibility: visible;
-}
-
-.form-control.error small{
-    color: #DB5A5A;
-    visibility: visible;
-}
-
 .form-control i {
     position: absolute;
     top: 45px;
@@ -103,8 +82,8 @@ form-control.success input {
     visibility: hidden;
     position: absolute;
     margin-top: 5px;
-    font-size: 14px;
-
+    font-size: 12px;
+    margin-left: 7px;
 }
 
 .cadastro img {
@@ -148,4 +127,25 @@ p {
     font-size: 17px;
     margin-top: 490px;
     margin-left: -310px;
+}
+
+.form-control.success input{
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input{
+    border: 3px solid #DB5A5A
+}
+
+.form-control.success i img-sucess{
+    visibility: visible;
+}
+
+.form-control.error i.img-error {
+    visibility: visible;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #DB5A5A;
 }
