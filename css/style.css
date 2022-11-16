@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Merriweather', serif;
-    
+    background-color: #ccc;
 }
 
 .col-1 {width: 8.33%;}
@@ -174,16 +174,19 @@ body {
 
 .barra {
     height: 60px;
-    background-color: rgb(124, 124, 124);
+    background-color: #6E172D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .barra-title {
-    padding-top: 10px;
-    text-align: center;
     color: white;
-    font-size: 30px;
     text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 1px;
     font-weight: bold;
+    
 }
 
 
