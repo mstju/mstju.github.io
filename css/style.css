@@ -72,13 +72,16 @@ body {
 
 
 .btn {
-    padding: 10px;
+    display: flex;
+    padding: 15px;
     border: none;
-    border-radius: 10px;
+    border-radius: 26px;
     cursor: pointer;
     text-decoration: none;
     background-color: white;
     color: #470F1D;
+    justify-content: center;    
+    align-items: center;
 }
 
 .btn:hover{
@@ -87,9 +90,14 @@ body {
     transition: 0.5s;
 }
 
+.entrar {
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
 
 .opcao {
-    background-color: #ccc;
     width: 800px;
     height: 550px;
     display: flex;
@@ -196,7 +204,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: #ccc;
+
 }
 
 .card {
