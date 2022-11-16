@@ -6,7 +6,7 @@ function redirect(){
 
 
 
-(async function(){
+const bairros = (async function(){
     try{    
         const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos')
         const jsonData = await response.json()
