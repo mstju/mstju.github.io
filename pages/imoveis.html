@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis</title>
+</head>
+<body>
+    <nav class="navBar">
+        <div>
+            <img class="logo" src="../imagens/logo.png" alt="logotipo" class="logo">
+        </div>
+        <div>
+            <a class="navbarLink" href="#">Buscar Loja</a>
+        </div>
+        <div>
+            <a class="navbarLink" href="#">para Proprietários</a>
+        </div>
+        <div>
+            <a class="navbarLink" href="#">Para Imobiliárias</a>
+        </div>
+        <div>
+            <button class="btnHome" onclick="redirect()"  type="button"><p class="home"> Home</p></button>
+        </div>
+    </nav>
+    <h1>IMÓVEIS SELECIONADOS</h1>
+
+    <main>
+        <section class="realtyData">
+            <div class="info">
+                <img class="imgArtPop" src="../imagens/FotoArtPop.jpg" alt="FotoLojaArtPop">
+            </div>
+            <div class="info">
+                <h2>INFORMAÇÕES SOBRE ESSA LOJA</h2>
+                    <p><strong>Empreendimento:</strong>  Shopping Diadema</p>
+                    <p> <strong>Atividade:</strong>  Salão de Beleza</p>
+                    <p><strong>Localização da Loja:</strong>  1º PAVIMENTO (L1013/L1014)</p>
+                    <p><strong>Área(ABL):</strong>  101m2</p>
+                    <p><strong>Infraestrutura:</strong> Energia, WiFi e Água</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="rent">
+
+            </div>
+        </section>
+    </main>
+ 
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html{
+        font-size: 16px;
+    }
+
+    .navBar{
+        background-color: #640d14;
+        height: 200px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo{
+        width: 15em;
+    }
+
+    .navbarLink{
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+
+    .navbarLinks:hover {
+        color: white;
+    }
+
+    .btnHome {
+        padding: 0.7em;
+        border-radius: 1.5em;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        background-color: #640d14;
+        border: 2px solid white;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .btnHome:hover{
+        color: #640d14;
+        background-color: white;
+        transition: 0.5s;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 1.2em;
+    }
+
+    main{
+        min-height: 100vh;
+    }
+
+    .realtyData{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
+        
+    }
+
+    .info{
+        margin-top: 1.7em;
+        height: 25em;
+        width: 50%;
+        border: 2px solid black;
+        background-color: black;
+        text-align: center;
+        align-items: center;
+        
+    }
+
+    .imgArtPop{
+        height: 24.8em;
+        margin-left: 2;
+        width: 42em
+    }
+
+    h2{
+        margin: 4em 0 3.7em 0em;
+        color: white
+
+    }
+
+    p{
+        color: white
+    }
+
+    
+
+   
+
+
+</style>
+<script src="js/script.js" defer></script>    
+</body>
+</html>
