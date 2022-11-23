@@ -5,8 +5,98 @@ body {
     background-image: url(../imagens/bg-cadastro.jpg);
     background-size: cover;
 }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-img {
+.navbar {
+    background-color: #640d14;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navbar-links {
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.navbar-links:before,
+.navbar-links:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.navbar-links:after { 
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar-links:before { 
+    right: 0;
+    top: -10px;
+}
+
+.navbar-links:hover {
+    color: white;
+}
+
+.navbar-links:hover:after,
+.navbar-links:hover:before {
+    width: 100%;
+}
+
+
+.btn {
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #640d14;
+    justify-content: center;    
+    align-items: center;
+    border: 1px solid white;
+}
+
+.btn:hover{
+    color: #640d14;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.entrar {
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.logo {
     width: 180px;
     position: absolute;
     top: 10px;
@@ -92,7 +182,7 @@ img {
 }
 
 
-a {
+.links {
     text-decoration: none;
     color: #640d14;
     font-weight: bold;

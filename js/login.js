@@ -27,3 +27,10 @@ function isPasswordValid(){
     return true
 }
 
+function redirectHome() {
+    window.open('../index.html', '_blank'); 
+}
+
+function redirect(){
+    window.open('login.html', '_blank'); 
+}
