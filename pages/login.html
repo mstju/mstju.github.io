@@ -9,33 +9,28 @@
 </head>
 <body>
     <section class="login-area">
-        <div class="login">
-                <div>
                     <img src="/imagens/logo-black.png" alt="">
-                </div>
 
-                <form>
-                    <div>
-                        <div class="label"><label>Email</label></div> <br>
+                <form class="form" id="form">
+
+                    <div class="form-control">
+                        <label for="email">E-mail</label>
                         <input type="email" name="email" id="email" onchange="validateFields()" placeholder="E-mail">
                     </div>
-                    <div>
-                        <div class="label"><label>Senha</label> <br>
+
+                    <div class="form-control">
+                        <label for="password">Senha</label> 
                         <input type="password" name="senha" id="senha" onchange="validateFields()" placeholder="Senha">
                     </div>
-                    <div>
-                        <button id="recuperar" type="button" disabled="true">Recuperar Senha</button><br>
-                    </div>
-                    <div>
-                    <button id="entrar" type="button" disabled="true">Entrar</button><br>
-                    </div>
-                </form>
-                <p>Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
-        </div>
+
+                    <button id="entrar" type="button">Entrar</button>
+
+                    <p style="margin-top: 20px;">Não possui uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+                    <p><a style="margin-top: 20px;" href="#">Esqueci minha Senha</a></p>
+                    </form>
     </section>
-</div>
 
 
-<script src="/js/login.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>

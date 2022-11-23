@@ -68,3 +68,5 @@ function successValidation(input){
 function validateEmail(input) {
    return /\S+@\S+\.\S+/.test(input);
 }
+
+

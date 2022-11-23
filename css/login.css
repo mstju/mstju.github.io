@@ -2,120 +2,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 body {
     font-family: 'Merriweather', serif;
-    background-color: #640d14;
+    background-image: url(../imagens/bg-cadastro.jpg);
+    background-size: cover;
 }
 
-.login-area {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;   
+img {
+    width: 180px;
+    position: absolute;
+    top: 10px;
 }
 
-.login {
-    background-color: #fff;
-    padding: 40px;
-    width: 400px;
-    height: 500px;
+.login-area{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 7px -6px rgba(0,0,0,0.75);
+    justify-content: center;
+    background-color: #fff; 
+    width: 500px;
+    height: 450px;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 11px 3px rgba(0,0,0,0.75);
 }
 
-.login form {
+.form{
+    margin-top: 100px;
+    padding: 0 40px 30px;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.label{
-    font-weight: bold;
-    margin-top: 10px;
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+
+.form-control input {
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 10px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
     margin-bottom: -20px;
-}
-#email {
-    padding: 5px;
-    background-color: rgb(226, 226, 226);
-    margin-top: 10px;
     height: 40px;
-    border-radius: 7px;
-    border: none;
-    outline: none;
-    color: rgb(83, 83, 83);
-    width: 250px;
 }
 
-#senha {
-    padding: 5px;
-    background-color: rgb(226, 226, 226);
-    margin-top: 10px;
-    height: 40px;
-    border-radius: 7px;
-    border: none;
-    outline: none;
-    color: rgb(83, 83, 83);
-    width: 250px;
-}
-
-#recuperar{
-    margin-top: 40px;
-    width: 130px;
-    height:30px;
-    border-radius: 6px;
-    background-color: rgb(114, 20, 20);
-    color: white;
-    text-align: center;
-    border: 1px solid black;
-    font-weight: bold;
-}
-
-button[disabled]{
-    opacity: 0.7;
-}
 
 #entrar{
+    text-transform: uppercase;
+    background-color: #640d14;
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
     margin-top: 10px;
-    width: 130px;
-    height:28px;
-    border-radius: 6px;
-    background-color: rgb(114, 20, 20);
-    color: white;
-    text-align: center;
-    border: 1px solid black;
-    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #640d14;
+    letter-spacing: 2px;
+}
+
+#entrar:hover {
+    background-color: #fff;
+    color: #640d14;
+    border: 1px solid #640d14;
+    transition: 0.9s ease-out;
 }
 
 .login img {
-    width: 250px;
+    width: 180px;
+    position: absolute;
+    top: 10px;
 }
 
-input::placeholder {
-    padding-left: 10px;
-}
-
-form [type="submit"] {
-    height: 50px;
-    cursor: pointer;
-    background-color: rgb(151, 11, 11);
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-}
 
 a {
-    color: rgb(151, 11, 11);
     text-decoration: none;
+    color: #640d14;
     font-weight: bold;
-}
-
-p {
-    font-size: 17px;
-    margin-top: 30px;
 }
