@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -76,11 +76,10 @@ body {
   width: 100%;
 }
 
-
-/* Conteúdo Principal e Selects */
+/* Header */
 #container-header {
-    background-color: black;
-    position: relative;
+  background-color: black;
+  position: relative;
 }
 
 #header-img {
@@ -90,41 +89,46 @@ body {
 }
 
 #main-container {
-    position: absolute;
-    top: 8em;
+  position: absolute;
+  top: 8em;
 }
 
 .header-title {
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    text-align: center;
+  color: white;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
 }
 
-#form-header{
-    text-align: center;
-    color: white;
+/* Header - Selects */
+
+#form-header {
+  text-align: center;
+  color: white;
 }
 
 .form-select {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding: 15px;
-    margin-top: 20px;
-    border-radius: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
 #form-submit {
-    margin-top: 20px;
-    border-radius: 20px;
-    width: 10em;
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 10em;
 }
 
 #form-submit:hover {
-    background-color: #580c12;
-    transition: 0.5s;
+  background-color: #580c12;
+  transition: 0.5s;
 }
 
 .form-select:focus {
-    outline: none !important;
-    box-shadow: 0 0 10px #580c12;
-  }
+  outline: none !important;
+  box-shadow: 0 0 10px #580c12;
+}
+
+/* Cards */
+
