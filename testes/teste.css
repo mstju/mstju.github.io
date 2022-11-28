@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,78 +7,124 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bg-primary-color {
-    background-color: #640d14;
+  background-color: #640d14;
 }
 
 .bg-secondary-color {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .bg-dark-color {
-    background-color: #290508;
+  background-color: #290508;
 }
 
 .primary-color {
-    color: #fff;
+  color: #fff;
 }
 
 .bg-secondary-color {
-    color: #000;
+  color: #000;
 }
 
 /* NavBar */
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.navbar-nav .nav-link.active, .nav-link,  .navbar-nav .show>.nav-link {
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.navbar-nav .nav-link.active,
+.nav-link,
+.navbar-nav .show > .nav-link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.nav-item a:hover, .nav-item a.active:hover {
-    color: #ccc;
-    transition: 0.6s;
+.nav-item a:hover,
+.nav-item a.active:hover {
+  color: #ccc;
+  transition: 0.6s;
 }
 
 .nav-link.active {
-    border-bottom: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .navbar-toggler:focus {
-    text-decoration: none; 
-    outline: 0;
-    box-shadow: none;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
 
-/* NavBar Img */ 
+/* NavBar Img */
 .navbar-brand {
-    display: flex;
+  display: flex;
 }
 
 .navbar-brand img {
-    width: 100px;
+  width: 100px;
 }
 
 #navbar-items {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-/* Botão de Entrar */ 
 
-/* Conteúdo Principal */
-
-.teste-header {
-    background-image: url(../imagens/teste-header.jpg);
-    background-size: contain;
-    height: 75vh;
+/* Conteúdo Principal e Selects */
+#container-header {
+    background-color: black;
+    position: relative;
 }
+
+#header-img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4;
+}
+
+#main-container {
+    position: absolute;
+    top: 8em;
+}
+
+.header-title {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+}
+
+#form-header{
+    text-align: center;
+    color: white;
+}
+
+.form-select {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#form-submit {
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 10em;
+}
+
+#form-submit:hover {
+    background-color: #580c12;
+    transition: 0.5s;
+}
+
+.form-select:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #580c12;
+  }
