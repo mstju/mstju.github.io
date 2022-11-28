@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Merriweather";
+    font-family: 'Roboto', sans-serif;
 }
 
 .bg-primary-color {
@@ -30,66 +30,54 @@ body {
 }
 
 /* NavBar */
-
-#navbar a.active {
-    color: #fff;
-    border-bottom: 1px solid #290508;
-}
-
-#navbar a:hover {
-    color: #ccc;
-}
-
-.navbar-links:before,
-.navbar-links:after {
-    content: "";
-    position: absolute; 
-    height: 2px;
-    width: 0px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
-}
-
-.navbar-links:after { 
-    left: 0;
-    bottom: -10px;
-}
-
-.navbar-links:before { 
-    right: 0;
-    top: -10px;
-}
-
-.navbar-links:hover {
-    color: white;
-}
-
-.navbar-links:hover:after,
-.navbar-links:hover:before {
-    width: 100%;
-}
-
-
-.navbar-brand {
-    display: flex;
-    
-}
-
-.navbar-brand img {
-    width: 180px;
-}
-
-#navbar-items .navbar-nav {
+.center {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
 }
 
-#navbar-items .nav-item {
-
-    margin: 0 2em;
+.navbar-nav .nav-link.active, .nav-link,  .navbar-nav .show>.nav-link {
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+.nav-item a:hover, .nav-item a.active:hover {
+    color: #ccc;
+    transition: 0.6s;
+}
+
+.nav-link.active {
+    border-bottom: 1px solid white;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none; 
+    outline: 0;
+    box-shadow: none;
+}
+
+/* NavBar Img */ 
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+#navbar-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Botão de Entrar */ 
+
 /* Conteúdo Principal */
+
+.teste-header {
+    background-image: url(../imagens/teste-header.jpg);
+    background-size: contain;
+    height: 75vh;
+}
