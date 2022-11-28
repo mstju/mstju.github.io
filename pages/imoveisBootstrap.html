@@ -9,30 +9,115 @@
     <title>Imóveis</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html">
-            <img src="../imagens/logo.png" alt="Logo" width="200" height="100" class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">BUSCAR LOJAS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PARA PROPRIETÁRIOS</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PARA IMOBILIÁRIAS</a>
-                </li>
-            </ul>
-          </div>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../imagens/logo.png" alt="Logo" width="200" height="100" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon btn btn-outline-light btn-lg"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">BUSCAR LOJAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PARA PROPRIETÁRIOS</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PARA IMOBILIÁRIAS</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid flex text-center my-3">
+            <p class="h1"> LOJAS SELECIONADAS PARA VOCÊ!</p>
         </div>
-      </nav>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+        <div class="container-fluid flex row">
+        <div class="image-flip container-fluid col-6 my-5 mx-3" ontouchstart="this.classList.toggle('hover');">
+            <div class="mainflip">
+            <div class="frontside">
+            <div class="card" style="width:20rem; height:23.5rem;">
+                <img class="card-img-top img- fluid" src="../imagens/fotoArtPop.jpg" alt="card image">
+                <div class="card-body my-4 text-white">
+                    <h4 class="card-title text-center">LOJA ART POP</h4>
+                    <h5 class="card-subtitle text-center">CABELEREIRO</h4>
+                </div>
+            </div>
+            </div>
+            <div class="backside">
+            <div class="card" style="width:20rem; height:23.5rem;">
+                <div class="card-header bg-dark">
+                    <h5 class="text-center text-white" >INFORMAÇÕES SOBRE A LOJA</h5> 
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title text-center">ART POP</h4>
+                    <p class="card-text">
+                        <p><strong>Empreendimento:</strong>  Shopping Diadema</p>
+                        <p><strong>Tipo:</strong>  Loja</p>
+                        <p> <strong>Atividade:</strong>  Salão de Beleza</p>
+                        <p><strong>Localização da Loja:</strong>  1º PAVIMENTO (L1013/L1014)</p>
+                        <p><strong>Área(ABL):</strong>  101m2</p>
+                        <p><strong>Infraestrutura:</strong> Energia, WiFi e Água</p>
+                    </p>
+                </div>        
+                <div class="text-center my-4">
+                    <a href="#" class="btn btn-success">ALUGUE!</a>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+        
+            <div class="image-flip container-fluid flex col-6 my-5 mx-3" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                <div class="frontside">
+                <div class="card" style="width:20rem; height:23.5rem;">
+                    <img class="card-img-top img- fluid" src="../imagens/fotoArtPop.jpg" alt="card image">
+                    <div class="card-body my-4 text-white">
+                        <h4 class="card-title text-center">LOJA ART POP</h4>
+                        <h5 class="card-subtitle text-center">CABELEREIRO</h4>
+                    </div>
+                </div>
+                </div>
+                <div class="backside">
+                <div class="card" style="width:20rem; height:23.5rem;">
+                    <div class="card-header bg-dark">
+                        <h5 class="text-center text-white" >INFORMAÇÕES SOBRE A LOJA</h5> 
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-center">ART POP</h4>
+                        <p class="card-text">
+                            <p><strong>Empreendimento:</strong>  Shopping Diadema</p>
+                            <p><strong>Tipo:</strong>  Loja</p>
+                            <p> <strong>Atividade:</strong>  Salão de Beleza</p>
+                            <p><strong>Localização da Loja:</strong>  1º PAVIMENTO (L1013/L1014)</p>
+                            <p><strong>Área(ABL):</strong>  101m2</p>
+                            <p><strong>Infraestrutura:</strong> Energia, WiFi e Água</p>
+                        </p>
+                    </div>        
+                    <div class="text-center my-4">
+                        <a href="#" class="btn btn-success">ALUGUE!</a>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>   
+            </div> 
+
+    </main>    
+
+      
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
