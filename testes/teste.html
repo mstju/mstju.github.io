@@ -34,55 +34,120 @@
   </head>
   <body>
     <!--Navbar-->
-    <nav
-      class="navbar navbar-expand-lg sticky-top bg-primary-color"
-      id="navbar"
-    >
-      <a href="" class="navbar-brand">
-        <img src="/../imagens/logo.png" alt="SobreLoja" />
-      </a>
-      <div class="container py-3">
+    <nav class="navbar navbar-expand-lg bg-primary-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../imagens/logo.png" alt="" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbar-items"
-          aria-controls="navbar-items"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="toggle navigation"
+          aria-label="Toggle navigation"
         >
-          <i class="bi bi-list"></i>
+          <span><i class="bi bi-list primary-color"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbar-items">
-          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-items">
             <li class="nav-item">
               <a
-                href="#"
-                class="nav-link primary-color active"
+                class="nav-link active primary-color"
                 aria-current="page"
-                >Início</a>
+                href="#"
+                >início</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link primary-color">Buscar Loja</a>
+            <li class="nav-item primary-color">
+              <a class="nav-link" href="#">Buscar Loja</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link primary-color">Para Proprietários</a>
+            <li class="nav-item primary-color">
+              <a class="nav-link" href="#">para proprietários</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link primary-color">Para Imobiliárias</a>
+            <li class="nav-item primary-color">
+              <a class="nav-link" href="#">para imobiliárias</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link primary-color"
-                ><i class="bi bi-box-arrow-right"></i> Entrar</a>
+            <li class="nav-item primary-color">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-box-arrow-in-right"></i> entrar</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!--Main-->
-    
+    <div class="container-fluid p-0" id="container-header">
+      <img
+        class="img-fluid"
+        id="header-img"
+        src="../imagens/teste-header.jpg"
+        alt=""
+      />
+      <div class="container-fluid p-0" id="main-container">
+        <h2 class="header-title fs-1">Encontre a loja dos seus sonhos!</h2>
+        <div class="container-md" id="form-header">
+          <form>
+            <select class="form-select w-50">
+              <option selected>Estado</option>
+              <option value="1">São Paulo</option>
+            </select>
+            <select class="form-select w-50">
+              <option selected>Bairro</option>
+              <option value="1">Vila Sônia</option>
+              <option value="2">Itaim Bibi</option>
+              <option value="3">Pinheiros</option>
+            </select>
+            <select class="form-select w-50">
+              <option selected>Valor</option>
+              <option value="1">até R$1.000,00</option>
+              <option value="2">R$1.000,00 a R$2.000,00</option>
+              <option value="3">R$2.0000,00 a R$3.000,00</option>
+              <option value="4">R$3.0000,00 a R$5.000,00</option>
+              <option value="5">R$5.0000,00 a R$7.000,00</option>
+              <option value="6">R$7.0000,00 a R$9.000,00</option>
+              <option value="7">mais de R$10.000,00</option>
+            </select>
+            <select class="form-select w-50">
+              <option selected>Tamanho</option>
+              >
+              <option value="1">até 20m²</option>
+              <option value="2">de 20m² a 50m²</option>
+              <option value="3">de 50m² a 1000m²</option>
+              <option value="4">de 100m² a 200m²</option>
+              <option value="5">de 200m² a 300m²</option>
+              <option value="6">de 300m² a 500m²</option>
+              <option value="7">mais de 500m²</option>
+            </select>
+            <select class="form-select w-50">
+              <option selected>Estabelecimento</option>
+              >
+              <option value="1">Shopping Iguatemi</option>
+              <option value="2">Shopping Ibirapuera</option>
+              <option value="3">Shopping Morumbi</option>
+            </select>
+            <select class="form-select w-50">
+              <option selected>Tipo</option>
+              >
+              <option value="1">Lojas</option>
+              <option value="2">Quiosques</option>
+              <option value="3">Alimentação</option>
+              <option value="4">Boxes</option>
+            </select>
+          </form>
+          <input
+            class="btn bg-primary-color primary-color fs-4"
+            type="submit"
+            value="Buscar"
+            id="form-submit"
+          />
+        </div>
+      </div>
+    </div>
+    <!--Cards-->
+
 
   </body>
 </html>
-
-

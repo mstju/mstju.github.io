@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -6,90 +7,128 @@
 }
 
 body {
-  font-family: "Merriweather";
+  font-family: "Roboto", sans-serif;
 }
 
 .bg-primary-color {
-    background-color: #640d14;
+  background-color: #640d14;
 }
 
 .bg-secondary-color {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .bg-dark-color {
-    background-color: #290508;
+  background-color: #290508;
 }
 
 .primary-color {
-    color: #fff;
+  color: #fff;
 }
 
 .bg-secondary-color {
-    color: #000;
+  color: #000;
 }
 
 /* NavBar */
-
-#navbar a.active {
-    color: #fff;
-    border-bottom: 1px solid #290508;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#navbar a:hover {
-    color: #ccc;
+.navbar-nav .nav-link.active,
+.nav-link,
+.navbar-nav .show > .nav-link {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.navbar-links:before,
-.navbar-links:after {
-    content: "";
-    position: absolute; 
-    height: 2px;
-    width: 0px;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
+.nav-item a:hover,
+.nav-item a.active:hover {
+  color: #ccc;
+  transition: 0.6s;
 }
 
-.navbar-links:after { 
-    left: 0;
-    bottom: -10px;
+.nav-link.active {
+  border-bottom: 1px solid white;
 }
 
-.navbar-links:before { 
-    right: 0;
-    top: -10px;
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
 }
 
-.navbar-links:hover {
-    color: white;
-}
-
-.navbar-links:hover:after,
-.navbar-links:hover:before {
-    width: 100%;
-}
-
-
+/* NavBar Img */
 .navbar-brand {
-    display: flex;
-    
+  display: flex;
 }
 
 .navbar-brand img {
-    width: 180px;
+  width: 100px;
 }
 
-#navbar-items .navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+#navbar-items {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
-#navbar-items .nav-item {
-
-    margin: 0 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+/* Header */
+#container-header {
+  background-color: black;
+  position: relative;
 }
 
-/* Conteúdo Principal */
+#header-img {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4;
+}
+
+#main-container {
+  position: absolute;
+  top: 8em;
+}
+
+.header-title {
+  color: white;
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+}
+
+/* Header - Selects */
+
+#form-header {
+  text-align: center;
+  color: white;
+}
+
+.form-select {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#form-submit {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 10em;
+}
+
+#form-submit:hover {
+  background-color: #580c12;
+  transition: 0.5s;
+}
+
+.form-select:focus {
+  outline: none !important;
+  box-shadow: 0 0 10px #580c12;
+}
+
+/* Cards */
+
