@@ -131,4 +131,17 @@ body {
 }
 
 /* Cards */
+.main-title{
+  text-align: center;
+  margin-top: 1em;
+}
+.card-text {
+  text-align: center;
+}
+
+.card {
+  margin-top: 2em;
+}
+
+/* Footer */
 
