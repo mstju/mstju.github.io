@@ -52,7 +52,7 @@
           <span><i class="bi bi-list primary-color"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-items">
+          <ul class="navbar-nav me-auto mb-3 mb-lg-0" id="navbar-items">
             <li class="nav-item">
               <a
                 class="nav-link active primary-color"
@@ -80,75 +80,64 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="container-fluid p-0" id="container-header">
-      <img
-        class="img-fluid"
-        id="header-img"
-        src="../imagens/teste-header.jpg"
-        alt=""
-      />
-      <div class="container-fluid p-0" id="main-container">
-        <h2 class="header-title fs-1">Encontre a loja dos seus sonhos!</h2>
-        <div class="container-md" id="form-header">
-          <form>
-            <select class="form-select w-50">
-              <option selected>Estado</option>
-              <option value="1">São Paulo</option>
-            </select>
-            <select class="form-select w-50">
-              <option selected>Bairro</option>
-              <option value="1">Vila Sônia</option>
-              <option value="2">Itaim Bibi</option>
-              <option value="3">Pinheiros</option>
-            </select>
-            <select class="form-select w-50">
-              <option selected>Valor</option>
-              <option value="1">até R$1.000,00</option>
-              <option value="2">R$1.000,00 a R$2.000,00</option>
-              <option value="3">R$2.0000,00 a R$3.000,00</option>
-              <option value="4">R$3.0000,00 a R$5.000,00</option>
-              <option value="5">R$5.0000,00 a R$7.000,00</option>
-              <option value="6">R$7.0000,00 a R$9.000,00</option>
-              <option value="7">mais de R$10.000,00</option>
-            </select>
-            <select class="form-select w-50">
-              <option selected>Tamanho</option>
-              >
-              <option value="1">até 20m²</option>
-              <option value="2">de 20m² a 50m²</option>
-              <option value="3">de 50m² a 1000m²</option>
-              <option value="4">de 100m² a 200m²</option>
-              <option value="5">de 200m² a 300m²</option>
-              <option value="6">de 300m² a 500m²</option>
-              <option value="7">mais de 500m²</option>
-            </select>
-            <select class="form-select w-50">
-              <option selected>Estabelecimento</option>
-              >
-              <option value="1">Shopping Iguatemi</option>
-              <option value="2">Shopping Ibirapuera</option>
-              <option value="3">Shopping Morumbi</option>
-            </select>
-            <select class="form-select w-50">
-              <option selected>Tipo</option>
-              >
-              <option value="1">Lojas</option>
-              <option value="2">Quiosques</option>
-              <option value="3">Alimentação</option>
-              <option value="4">Boxes</option>
-            </select>
+    <div class="container-lg mt-3">
+    <div class="row header-content">
+      <div class="col-4 ">
+        <h1 class="form-title fs-4 text-center mb-4 mt-4">Encontre a loja dos seus sonhos</h1>
+        <form>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Estado</option>
+            <option value="1">São Paulo</option>
+          </select>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Bairro</option>
+            <option value="1">Vila Sônia</option>
+            <option value="2">Itaim Bibi</option>
+            <option value="3">Pinheiros</option>
+          </select>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Valor</option>
+            <option value="1">até R$1.000,00</option>
+            <option value="2">R$1.000,00 a R$2.000,00</option>
+            <option value="3">R$2.0000,00 a R$3.000,00</option>
+            <option value="4">R$3.0000,00 a R$5.000,00</option>
+            <option value="5">R$5.0000,00 a R$7.000,00</option>
+            <option value="6">R$7.0000,00 a R$9.000,00</option>
+            <option value="7">mais de R$10.000,00</option>
+          </select>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Tamanho</option>
+            <option value="1">até 20m²</option>
+            <option value="2">de 20m² a 50m²</option>
+            <option value="3">de 50m² a 1000m²</option>
+            <option value="4">de 100m² a 200m²</option>
+            <option value="5">de 200m² a 300m²</option>
+            <option value="6">de 300m² a 500m²</option>
+            <option value="7">mais de 500m²</option>
+          </select>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Estabelecimento</option>
+            <option value="1">Shopping Iguatemi</option>
+            <option value="2">Shopping Ibirapuera</option>
+            <option value="3">Shopping Morumbi</option>
+          </select>
+          <select class="form-select mb-3 p-2 w-100">
+            <option selected>Tipo</option>
+            <option value="1">Lojas</option>
+            <option value="2">Quiosques</option>
+            <option value="3">Alimentação</option>
+            <option value="4">Boxes</option>
+          </select>
           </form>
-          <input
-            class="btn bg-primary-color primary-color fs-4"
-            type="submit"
-            value="Buscar"
-            id="form-submit"
-          />
-        </div>
+      </div>
+      <div class="col-8">
+        <img src="../imagens/main.jpg" alt="" class="h-100 img-fluid">
       </div>
     </div>
+  </div>
+</div>
     <!--Cards-->
-    <div id="area-imoveis">
+    <div  id="area-imoveis">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -193,24 +182,31 @@
 
     <!-- Footer-->
 
-    <footer class="bg-primary-color">
-			<div class="container">
-					<div class="col-md-12 text-center">
-						<div class="about">
-							<a href="#" class="primary-color about-links fs-5">SOBRE NÓS</a>
-							<a href="#" class="primary-color about-links fs-5">REGIÕES ATENDIDAS</a>
-							<a href="#" class="primary-color about-links fs-5">FAQ</a>
-            </div>
-						<ul class="redes-sociais mt-4">
-              <a href=""><i class="bi bi-facebook fs-4 primary-color ms-4 "></i></a>
-              <a href=""><i class="bi bi-whatsapp fs-4 primary-color ms-4"></i></a>
-              <a href=""><i class="bi bi-instagram fs-4 primary-color ms-4"></i></a>
-              <a href=""><i class="bi bi-linkedin fs-4 primary-color ms-4"></i></a>
-              <a href=""><i class="bi bi-twitter fs-4 primary-color ms-4"></i></a>
-            	</ul>
-					</div>
-			</div>
-		</footer>
+    <footer class="footer bg-primary-color">
+      <div class="conteudo">
+          
+              <div class="footer-section">
+                  <h3>Sobre Nós</h3>
+                  <ul>
+                      <li><a href="#">Conheça o SobreLoja</a></li>
+                      <li><a href="#">Regiões Atendidas</a></li>
+                      <li><a href="#">FAQ</a></li>
+                  </ul>
+              </div>
+              <div class="footer-section">
+                  <h3>Contato</h3>
+                  <div class="redes-sociais">
+                      <a href="#"><i class="bi bi-facebook fs-4 primary-color "></i></a>
+                      <a href="#"><i class="bi bi-twitter fs-4 primary-color "></i></a>
+                      <a href="#"><i class="bi bi-instagram fs-4 primary-color "></i></a>
+                      <a href="#"><i class="bi bi-linkedin fs-4 primary-color "></i></a>
+                      <a href="#"><i class="bi bi-whatsapp fs-4 primary-color "></i></a>
+                  </div>
+              
+
+          </div>
+      </div>
+</footer> 
 
   </body>
 </html>
