@@ -144,4 +144,33 @@ body {
 }
 
 /* Footer */
+footer {
+  margin-top: 3em;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.about-links {
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Times New Roman', sans-serif;  
+}
+
+.about-links:hover {
+  color: #ccc;
+}
+
+
+.bi:hover {
+  color: #ccc;
+  transition: 0.5s;
+}
