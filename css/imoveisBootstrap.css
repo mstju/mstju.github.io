@@ -22,6 +22,11 @@
             text-align: center;
         }
 
+        .navbar-toggler .btn {
+            background-color: white;
+            border: black;
+        } 
+
         .navbar-toggler {
             background-color: white;
         } 
@@ -120,6 +125,6 @@
         }
 
         .btn{
-            background-color: white;
-            border-color: black;
+            background-color: #640d14;
+            border-color: #640d14;
         }
