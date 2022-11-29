@@ -28,8 +28,12 @@ body {
   color: #fff;
 }
 
-.bg-secondary-color {
+.secondary-color {
   color: #000;
+}
+
+.links-color {
+    color: #640d14;
 }
 
 .register {
@@ -49,5 +53,23 @@ body {
   -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
-  border: 1px solid #fff;
+  border: 2px solid #000;
+}
+
+.links-register:hover {
+    color: #000;
+    transition: 0.6s;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+form {
+    text-align: left;
+}
+
+#submit-login{
+    margin-left: 50%;
+    transform: translateX(-50%);
 }

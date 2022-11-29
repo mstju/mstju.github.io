@@ -40,20 +40,20 @@
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-dark text-white" style="border-radius: 2rem">
+            <div class="card bg-light text-white" style="border-radius: 2rem">
               <div class="card-body p-5 text-center">
-                <div class="mt-md-4">
+                <div class="md-4">
                   <img
-                    src="../imagens/logo.png"
+                    src="../imagens/logo-black.png"
                     onclick="redirectHome()"
                     role="button"
-                    class="img-fluid w-50 p-3"
+                    class="img-fluid w-50 p-2 mb-2"
                     alt="..."
                   />
 
                   <section>
                     <form>
-                      <label class="form-label" for="email">E-mail</label>
+                      <label class="form-label secondary-color" for="email">E-mail</label>
                       <input
                         type="email"
                         id="email"
@@ -62,7 +62,7 @@
                         required
                       />
 
-                      <label class="form-label mt-4" for="password"
+                      <label class="form-label mt-4 secondary-color" for="password"
                         >Senha</label
                       >
                       <input
@@ -73,24 +73,25 @@
                         required
                       />
                       <input
-                      class="btn btn-outline-light btn-lg px-5 mt-5"
+                      class="btn btn-outline-dark btn-lg px-5 mt-5"
                       type="submit"
                       value="Login"
+                      id="submit-login"
                     >
-                    </button>
-                    </form>
+                </form>
+                    
                   </section>
 
-                  <p class="small mb-4 pb-lg-2 mt-5">
-                    <a class="text-white-50 fs-6" href="#!">Esqueci minha senha</a>
+                  <p class="small pb-lg-2 mt-4">
+                    <a class="links-register links-color fs-6 text-decoration-none" href="#!">Esqueci minha senha</a>
                   </p>
 
                 </div>
 
                 <div>
-                  <p class="mb-0">
+                  <p class="mb-0 text-black">
                     Não tem uma conta?
-                    <a href="#!" class="register text-white fw-bold"
+                    <a href="#!" class="links-register register links-color fw-bold"
                       >Cadastre-se</a
                     >
                   </p>
