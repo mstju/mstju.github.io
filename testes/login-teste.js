@@ -1,5 +1,5 @@
 function redirectHome() {
-    window.open('../index.html', '_blank'); 
+    window.open('./teste.html', '_blank'); 
 }
 
 function redirectLogin() {
