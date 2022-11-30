@@ -9,6 +9,7 @@
 body {
   background-color: #ccc;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .bg-primary-color {
@@ -79,8 +80,15 @@ body {
 
 /* Header */
 
+
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+/* Header - Selects */
 .form-select:focus {
-  border-color: #ff0000;
+  border-color: #290508;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
 }
 
@@ -88,12 +96,9 @@ body {
   font-family: "Fredoka One", cursive;
 }
 
-.main-title {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+.form-select {
+  border: 1px solid black;
 }
-/* Header - Selects */
-
 /* Cards */
 .main-title {
   text-align: center;
