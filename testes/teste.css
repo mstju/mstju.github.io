@@ -64,12 +64,10 @@ body {
 }
 
 /* NavBar Img */
-.navbar-brand {
-  display: flex;
-}
 
-.navbar-brand img {
-  width: 100px;
+
+a.navbar-brand {
+  margin: 0;
 }
 
 #navbar-items {
@@ -79,8 +77,6 @@ body {
 }
 
 /* Header */
-
-
 
 .main-title {
   font-family: "Roboto", sans-serif;
