@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg bg-primary-color">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../imagens/sobre.png " class="w-25" alt="" />
+          <img src="../imagens/sobre.png " class="logo" alt="" />
         </a>
         <button
           class="navbar-toggler"
@@ -71,7 +71,10 @@
               <a class="nav-link" href="#">para imobiliárias</a>
             </li>
             <li class="nav-item primary-color">
-              <a onclick="redirectLogin()" class="nav-link" href="./login-t.html"
+              <a
+                onclick="redirectLogin()"
+                class="nav-link"
+                href="./login-t.html"
                 ><i class="bi bi-box-arrow-in-right"></i> entrar</a
               >
             </li>
@@ -80,99 +83,106 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="container-xs mt-3 ms-4">
-    <div class="row header-content">
-      <div class="col-4 ">
-        <h1 class="form-title fs-3 text-center mb-4 mt-4">Encontre a loja dos seus sonhos</h1>
-        <form>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Estado</option>
-            <option value="1">São Paulo</option>
-          </select>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Bairro</option>
-            <option value="1">Vila Sônia</option>
-            <option value="2">Itaim Bibi</option>
-            <option value="3">Pinheiros</option>
-          </select>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Valor</option>
-            <option value="1">até R$1.000,00</option>
-            <option value="2">R$1.000,00 a R$2.000,00</option>
-            <option value="3">R$2.0000,00 a R$3.000,00</option>
-            <option value="4">R$3.0000,00 a R$5.000,00</option>
-            <option value="5">R$5.0000,00 a R$7.000,00</option>
-            <option value="6">R$7.0000,00 a R$9.000,00</option>
-            <option value="7">mais de R$10.000,00</option>
-          </select>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Tamanho</option>
-            <option value="1">até 20m²</option>
-            <option value="2">de 20m² a 50m²</option>
-            <option value="3">de 50m² a 1000m²</option>
-            <option value="4">de 100m² a 200m²</option>
-            <option value="5">de 200m² a 300m²</option>
-            <option value="6">de 300m² a 500m²</option>
-            <option value="7">mais de 500m²</option>
-          </select>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Estabelecimento</option>
-            <option value="1">Shopping Iguatemi</option>
-            <option value="2">Shopping Ibirapuera</option>
-            <option value="3">Shopping Morumbi</option>
-          </select>
-          <select class="form-select mb-3 p-2 w-100">
-            <option selected>Tipo</option>
-            <option value="1">Lojas</option>
-            <option value="2">Quiosques</option>
-            <option value="3">Alimentação</option>
-            <option value="4">Boxes</option>
-          </select>
+    <div class="container-fluid p-0 ">
+      <div class="header-content ">
+        <div class="container-form ">
+          <h2 class="form-title mb-4">Encontre a loja dos seus sonhos!</h2>
+          <form>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Estado</option>
+              <option value="1">São Paulo</option>
+            </select>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Bairro</option>
+              <option value="1">Vila Sônia</option>
+              <option value="2">Itaim Bibi</option>
+              <option value="3">Pinheiros</option>
+            </select>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Valor</option>
+              <option value="1">até R$1.000,00</option>
+              <option value="2">R$1.000,00 a R$2.000,00</option>
+              <option value="3">R$2.0000,00 a R$3.000,00</option>
+              <option value="4">R$3.0000,00 a R$5.000,00</option>
+              <option value="5">R$5.0000,00 a R$7.000,00</option>
+              <option value="6">R$7.0000,00 a R$9.000,00</option>
+              <option value="7">mais de R$10.000,00</option>
+            </select>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Tamanho</option>
+              <option value="1">até 20m²</option>
+              <option value="2">de 20m² a 50m²</option>
+              <option value="3">de 50m² a 1000m²</option>
+              <option value="4">de 100m² a 200m²</option>
+              <option value="5">de 200m² a 300m²</option>
+              <option value="6">de 300m² a 500m²</option>
+              <option value="7">mais de 500m²</option>
+            </select>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Estabelecimento</option>
+              <option value="1">Shopping Iguatemi</option>
+              <option value="2">Shopping Ibirapuera</option>
+              <option value="3">Shopping Morumbi</option>
+            </select>
+            <select class="form-select mb-3 p-2 w-100">
+              <option selected>Tipo</option>
+              <option value="1">Lojas</option>
+              <option value="2">Quiosques</option>
+              <option value="3">Alimentação</option>
+              <option value="4">Boxes</option>
+            </select>
+            <button type="submit" class="btn btn-outline-dark btn-lg px-5 mt-4  ">Buscar</button>
           </form>
-      </div>
-      <div class="col-8 ">
-        <img src="../imagens/main.jpg" alt="" class="h-100 img-fluid">
+        </div>
+        <div class="header-img-content w-100">
+          <img
+            src="../imagens/main.jpg"
+            alt=""
+            class="header-img img-fluid w-100"
+          />
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
     <!--Cards-->
-    <div  id="area-imoveis">
-      <div class="container-fluid ">
+    <div id="area-imoveis">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <h3 class="main-title">Pontos Comerciais em Shopping Centers, Centros Comerciais, Galerias e Rua</h3>
+            <h3 class="main-title">
+              Pontos Comerciais em Shopping Centers, Centros Comerciais,
+              Galerias e Rua
+            </h3>
           </div>
           <div class="col-md-3">
             <div class="card md-3">
-              <img src="../imagens/loja.jpg" class="card-img-top" alt="">
+              <img src="../imagens/loja.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-text">Lojas</h5>
               </div>
-              </div>
             </div>
-            <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
             <div class="card">
-              <img src="../imagens/box.jpg" class="card-img-top" alt="">
+              <img src="../imagens/box.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-text">Quiosques</h5>
               </div>
-              </div>
             </div>
-            <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
             <div class="card">
-              <img src="../imagens/food.jpg" class="card-img-top" alt="">
+              <img src="../imagens/food.jpg" class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-text">Alimentação</h5>
               </div>
-              </div>
             </div>
-            <div class="col-md-3">
+          </div>
+          <div class="col-md-3">
             <div class="card">
-              <img src="../imagens/quiosque.jpeg" class="card-img-top" alt="">
+              <img src="../imagens/quiosque.jpeg" class="card-img-top" alt="" />
               <div class="card-body">
                 <h5 class="card-text">Boxes</h5>
-                </div>
               </div>
             </div>
           </div>
@@ -184,29 +194,25 @@
 
     <footer class="footer bg-primary-color">
       <div class="conteudo">
-          
-              <div class="footer-section">
-                  <h3>Sobre Nós</h3>
-                  <ul>
-                      <li><a href="#">Conheça o SobreLoja</a></li>
-                      <li><a href="#">Regiões Atendidas</a></li>
-                      <li><a href="#">FAQ</a></li>
-                  </ul>
-              </div>
-              <div class="footer-section">
-                  <h3>Contato</h3>
-                  <div class="redes-sociais">
-                      <a href="#"><i class="bi bi-facebook fs-5 primary-color "></i></a>
-                      <a href="#"><i class="bi bi-twitter fs-5 primary-color "></i></a>
-                      <a href="#"><i class="bi bi-instagram fs-5 primary-color "></i></a>
-                      <a href="#"><i class="bi bi-linkedin fs-5 primary-color "></i></a>
-                      <a href="#"><i class="bi bi-whatsapp fs-5 primary-color "></i></a>
-                  </div>
-              
-
+        <div class="footer-section">
+          <h3>Sobre Nós</h3>
+          <ul>
+            <li><a href="#">Conheça o SobreLoja</a></li>
+            <li><a href="#">Regiões Atendidas</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <div class="redes-sociais">
+            <a href="#"><i class="bi bi-facebook fs-5 primary-color"></i></a>
+            <a href="#"><i class="bi bi-twitter fs-5 primary-color"></i></a>
+            <a href="#"><i class="bi bi-instagram fs-5 primary-color"></i></a>
+            <a href="#"><i class="bi bi-linkedin fs-5 primary-color"></i></a>
+            <a href="#"><i class="bi bi-whatsapp fs-5 primary-color"></i></a>
           </div>
+        </div>
       </div>
-</footer> 
-
+    </footer>
   </body>
 </html>

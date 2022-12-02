@@ -69,6 +69,10 @@ a.navbar-brand {
   margin: 0;
 }
 
+.logo {
+  width: 20%;
+}
+
 #navbar-items {
   display: flex;
   justify-content: space-around;
@@ -76,12 +80,29 @@ a.navbar-brand {
 }
 
 /* Header */
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding-right: 3em;
+  padding-left: 3em;
+  height: 35em;
+}
 
 .main-title {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 2rem;
 }
 /* Header - Selects */
+
 .form-select:focus {
   border-color: #290508;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
@@ -89,11 +110,21 @@ a.navbar-brand {
 
 .form-title {
   font-family: "Fredoka One", cursive;
+  text-align: center;
+  font-size: 2em;
 }
 
 .form-select {
   border: 1px solid black;
+  padding: 2em;
+
 }
+
+.btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Cards */
 .main-title {
   text-align: center;
@@ -189,6 +220,14 @@ ul {
 }
 @media (max-width: 574px) {
   .footer-section {
+    width: 100%;
+  }
+  .header-content {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-img {
     width: 100%;
   }
 }
