@@ -1,67 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../css/cadastro.css">
-    <script src="https://kit.fontawesome.com/774959753e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav class="navbar col-12"> 
-        <img style="cursor: pointer;" class="logo col-1" onclick="redirectHome()" src="../imagens/logo.png" alt="logotipo" class="logo">
-            <a class="navbar-links" href="#">Buscar Loja</a>
-            <a class="navbar-links" href="#">para Proprietários</a>
-            <a class="navbar-links" href="#">Para Imobiliárias</a>
-                <button onclick="redirect()" class="btn col-2" type="button"> <i style="margin-left: 2px;" class="fa-solid fa-right-to-bracket"></i><p class="entrar"> Entrar</p></button>
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <script
+      src="https://kit.fontawesome.com/774959753e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar col-12">
+      <img
+        style="cursor: pointer"
+        class="logo col-1"
+        onclick="redirectHome()"
+        src="../imagens/logo.png"
+        alt="logotipo"
+        class="logo"
+      />
+      <a class="navbar-links" href="#">Buscar Loja</a>
+      <a class="navbar-links" href="#">para Proprietários</a>
+      <a class="navbar-links" href="#">Para Imobiliárias</a>
+      <button onclick="redirect()" class="btn col-2" type="button">
+        <i style="margin-left: 2px" class="fa-solid fa-right-to-bracket"></i>
+        <p class="entrar">Entrar</p>
+      </button>
     </nav>
 
-        <section class="cadastro">
-                    <img class="logo-cadastro" src="/imagens/logo-black.png" alt="">
-                
-                <form class="form" id="form">
-                    <div class="form-control">
-                        <label for="username">Nome Completo</label> 
-                        <input id="username" type="text" name="nome" placeholder="Nome e Sobrenome" required>
-                        <i><img class="img-success" src="../imagens/success-icon.svg" alt="ícone de acerto"></i>
-                        <i><img class="img-error"src="../imagens/error-icon" alt="ícone de erro"></i>
+    <section class="cadastro">
+      <img class="logo-cadastro" src="/imagens/logo-black.png" alt="" />
 
-                        <small>Error Mesage</small>
-                    </div>
-                    <div class="form-control">
-                        <label for="email">Email</label> 
-                        <input id="email" type="email" name="email" placeholder="E-mail" required>
-                        <i><img class="img-success" src="../imagens/check.png" alt="ícone de acerto"></i>
-                        <i><img class="img-error" src="../imagens/error-icon.svg" alt="ícone de erro"></i>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="username">Nome Completo</label>
+          <input
+            id="username"
+            type="text"
+            name="nome"
+            placeholder="Nome e Sobrenome"
+            required
+          />
+          <i
+            ><img
+              class="img-success"
+              src="../imagens/success-icon.svg"
+              alt="ícone de acerto"
+          /></i>
+          <i
+            ><img
+              class="img-error"
+              src="../imagens/error-icon"
+              alt="ícone de erro"
+          /></i>
 
-                        <small>Error Mesage</small>
-                    </div>
-                    
-                    <div class="form-control">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="senha" placeholder="Senha" required>
-                        <i><img class="img-success" src="../imagens/success-icon.svg" alt="ícone de acerto"></i>
-                        <i><img class="img-error" src="../imagens/error-icon.svg" alt="ícone de erro"></i>
+          <small>Error Mesage</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+          <i
+            ><img
+              class="img-success"
+              src="../imagens/check.png"
+              alt="ícone de acerto"
+          /></i>
+          <i
+            ><img
+              class="img-error"
+              src="../imagens/error-icon.svg"
+              alt="ícone de erro"
+          /></i>
 
-                        <small>Error Mesage</small>
-                    
-                    </div>
-                    <div class="form-control">
-                        <label for="passwordConfirm">Confirme sua Senha</label>
-                        <input id="passwordConfirm" type="password" name="confirmaçãoSenha"  placeholder="Confirmação de Senha" required>
-                        <i><img class="img-success" src="../imagens/success-icon.svg" alt="ícone de acerto"></i>
-                        <i><img class="img-error" src="../imagens/error-icon.svg" alt="ícone de erro"></i>
+          <small>Error Mesage</small>
+        </div>
 
-                        <small>Error Mesage</small>
-                        </div>
-                                <button type="submit">CADASTRAR</button>
-                                    <p class="log">Já possui uma conta? <a class="links" href="login.html">Entre aqui</a></p>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            id="password"
+            type="password"
+            name="senha"
+            placeholder="Senha"
+            required
+          />
+          <i
+            ><img
+              class="img-success"
+              src="../imagens/success-icon.svg"
+              alt="ícone de acerto"
+          /></i>
+          <i
+            ><img
+              class="img-error"
+              src="../imagens/error-icon.svg"
+              alt="ícone de erro"
+          /></i>
 
-                </form>
+          <small>Error Mesage</small>
+        </div>
+        <div class="form-control">
+          <label for="passwordConfirm">Confirme sua Senha</label>
+          <input
+            id="passwordConfirm"
+            type="password"
+            name="confirmaçãoSenha"
+            placeholder="Confirmação de Senha"
+            required
+          />
+          <i
+            ><img
+              class="img-success"
+              src="../imagens/success-icon.svg"
+              alt="ícone de acerto"
+          /></i>
+          <i
+            ><img
+              class="img-error"
+              src="../imagens/error-icon.svg"
+              alt="ícone de erro"
+          /></i>
+
+          <small>Error Mesage</small>
+        </div>
+        <button type="submit">CADASTRAR</button>
+        <p class="log">
+          Já possui uma conta? <a class="links" href="login.html">Entre aqui</a>
+        </p>
+      </form>
     </section>
 
-
-<script src="../js/cadastro.js"></script>
-</body>
+    <script src="../js/cadastro.js"></script>
+  </body>
 </html>

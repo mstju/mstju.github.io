@@ -1,46 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="../css/login.css">
-    <script src="https://kit.fontawesome.com/774959753e.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-    <nav class="navbar col-12"> 
-        <img style="cursor: pointer;" class="col-1" onclick="redirectHome()" src="../imagens/logo.png" alt="logotipo" class="logo">
-            <a class="navbar-links" href="#">Buscar Loja</a>
-            <a class="navbar-links" href="#">para Proprietários</a>
-            <a class="navbar-links" href="#">Para Imobiliárias</a>
-                <button onclick="redirect()" class="btn col-2" type="button"> <i style="margin-left: 2px;" class="fa-solid fa-right-to-bracket"></i><p class="entrar"> Entrar</p></button>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script
+      src="https://kit.fontawesome.com/774959753e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar col-12">
+      <img
+        style="cursor: pointer"
+        class="col-1"
+        onclick="redirectHome()"
+        src="../imagens/logo.png"
+        alt="logotipo"
+        class="logo"
+      />
+      <a class="navbar-links" href="#">Buscar Loja</a>
+      <a class="navbar-links" href="#">para Proprietários</a>
+      <a class="navbar-links" href="#">Para Imobiliárias</a>
+      <button onclick="redirect()" class="btn col-2" type="button">
+        <i style="margin-left: 2px" class="fa-solid fa-right-to-bracket"></i>
+        <p class="entrar">Entrar</p>
+      </button>
     </nav>
 
     <section class="login-area">
-                    <img class="logo" src="/imagens/logo-black.png" alt="">
+      <img class="logo" src="/imagens/logo-black.png" alt="" />
 
-                <form class="form" id="form">
+      <form class="form" id="form">
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            onchange="validateFields()"
+            placeholder="E-mail"
+          />
+        </div>
 
-                    <div class="form-control">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" onchange="validateFields()" placeholder="E-mail">
-                    </div>
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            onchange="validateFields()"
+            placeholder="Senha"
+          />
+        </div>
 
-                    <div class="form-control">
-                        <label for="password">Senha</label> 
-                        <input type="password" name="senha" id="senha" onchange="validateFields()" placeholder="Senha">
-                    </div>
+        <button id="entrar" type="button">Entrar</button>
 
-                    <button id="entrar" type="button">Entrar</button>
-
-                    <p style="margin-top: 20px;">Não possui uma conta? <a class="links" href="cadastro.html">Cadastre-se aqui</a></p>
-                    <p><a class="links" style="margin-top: 20px;" href="#">Esqueci minha Senha</a></p>
-                    </form>
+        <p style="margin-top: 20px">
+          Não possui uma conta?
+          <a class="links" href="cadastro.html">Cadastre-se aqui</a>
+        </p>
+        <p>
+          <a class="links" style="margin-top: 20px" href="#"
+            >Esqueci minha Senha</a
+          >
+        </p>
+      </form>
     </section>
 
-
-<script src="../js/login.js"></script>
-</body>
+    <script src="../js/login.js"></script>
+  </body>
 </html>
