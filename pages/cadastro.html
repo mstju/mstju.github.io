@@ -4,140 +4,129 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro</title>
+    <link
+      rel="shortcut icon"
+      href="../imagens/favicon.png"
+      type="image/x-icon"
+    />
+    <!--Bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Icons Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!--Meu CSS-->
     <link rel="stylesheet" href="../css/cadastro.css" />
+    <!-- JavaScript Bundle with Popper -->
     <script
-      src="https://kit.fontawesome.com/774959753e.js"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-  </head>
-  <body>
-    <nav class="navbar col-12">
-      <img
-        style="cursor: pointer"
-        class="logo col-1"
-        onclick="redirectHome()"
-        src="../imagens/logo.png"
-        alt="logotipo"
-        class="logo"
-      />
-      <a class="navbar-links" href="#">Buscar Loja</a>
-      <a class="navbar-links" href="#">para Proprietários</a>
-      <a class="navbar-links" href="#">Para Imobiliárias</a>
-      <button onclick="redirect()" class="btn col-2" type="button">
-        <i style="margin-left: 2px" class="fa-solid fa-right-to-bracket"></i>
-        <p class="entrar">Entrar</p>
-      </button>
-    </nav>
-
-    <section class="cadastro">
-      <img class="logo-cadastro" src="/imagens/logo-black.png" alt="" />
-
-      <form class="form" id="form">
-        <div class="form-control">
-          <label for="username">Nome Completo</label>
-          <input
-            id="username"
-            type="text"
-            name="nome"
-            placeholder="Nome e Sobrenome"
-            required
-          />
-          <i
-            ><img
-              class="img-success"
-              src="../imagens/success-icon.svg"
-              alt="ícone de acerto"
-          /></i>
-          <i
-            ><img
-              class="img-error"
-              src="../imagens/error-icon"
-              alt="ícone de erro"
-          /></i>
-
-          <small>Error Mesage</small>
-        </div>
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            required
-          />
-          <i
-            ><img
-              class="img-success"
-              src="../imagens/check.png"
-              alt="ícone de acerto"
-          /></i>
-          <i
-            ><img
-              class="img-error"
-              src="../imagens/error-icon.svg"
-              alt="ícone de erro"
-          /></i>
-
-          <small>Error Mesage</small>
-        </div>
-
-        <div class="form-control">
-          <label for="password">Senha</label>
-          <input
-            id="password"
-            type="password"
-            name="senha"
-            placeholder="Senha"
-            required
-          />
-          <i
-            ><img
-              class="img-success"
-              src="../imagens/success-icon.svg"
-              alt="ícone de acerto"
-          /></i>
-          <i
-            ><img
-              class="img-error"
-              src="../imagens/error-icon.svg"
-              alt="ícone de erro"
-          /></i>
-
-          <small>Error Mesage</small>
-        </div>
-        <div class="form-control">
-          <label for="passwordConfirm">Confirme sua Senha</label>
-          <input
-            id="passwordConfirm"
-            type="password"
-            name="confirmaçãoSenha"
-            placeholder="Confirmação de Senha"
-            required
-          />
-          <i
-            ><img
-              class="img-success"
-              src="../imagens/success-icon.svg"
-              alt="ícone de acerto"
-          /></i>
-          <i
-            ><img
-              class="img-error"
-              src="../imagens/error-icon.svg"
-              alt="ícone de erro"
-          /></i>
-
-          <small>Error Mesage</small>
-        </div>
-        <button type="submit">CADASTRAR</button>
-        <p class="log">
-          Já possui uma conta? <a class="links" href="login.html">Entre aqui</a>
-        </p>
-      </form>
-    </section>
-
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+    <!--Meu JS-->
     <script src="../js/cadastro.js"></script>
+
+    <title>SobreLoja</title>
+  </head>
+
+  <body>
+    <section class="vh-100" id="login-container">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <div class="card bg-light text-white" style="border-radius: 2rem">
+              <div class="card-body p-5 text-center">
+                <div class="md-4">
+                  <img
+                    src="../imagens/sobre-black.png"
+                    onclick="redirectHome()"
+                    role="button"
+                    class="img-fluid w-25 p-2 mb-2"
+                    alt="..."
+                  />
+
+                  <section>
+                    <form>
+                      <label
+                        class="form-label mt-4 secondary-color"
+                        for="text"
+                        >Nome Completo</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        class="form-control form-control-lg"
+                        placeholder="Digite seu nome completo"
+                        required
+                      />
+
+                      <label
+                      class="form-label mt-4 secondary-color"
+                      for="text"
+                      >teste</label
+                    >
+                    <input
+                      type="text"
+                      id="data"
+                      name="data"
+                      placeholder="Data de Nascimento"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                      
+                      <label class="form-label secondary-color mt-4" for="cpf"
+                        >CPF ou CNPJ</label
+                      >
+                      <input
+                        type="text"
+                        id="cpfOuCnpj"
+                        name="cpfOuCnpj"
+                        class="form-control form-control-lg cpfOuCnpj"
+                        placeholder="Digite seu CPF ou CNPJ"
+                        required
+                      />
+                      <input
+                        class="btn btn-outline-dark btn-lg px-5 mt-5"
+                        type="submit"
+                        value="Login"
+                        id="submit-login"
+                      />
+                    </form>
+                  </section>
+
+                  <p class="small pb-lg-2 mt-4">
+                    <a
+                      class="links-register links-color fs-6 text-decoration-none"
+                      href="#!"
+                      >Esqueci minha senha</a
+                    >
+                  </p>
+                </div>
+
+                <div>
+                  <p class="mb-0 text-black">
+                    Não tem uma conta?
+                    <a
+                      href="#!"
+                      class="links-register register links-color fw-bold"
+                      >Cadastre-se</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
