@@ -1,9 +1,9 @@
 
 // função que faz abrir o link em outra aba
-function redirect(){
-    window.open('pages/login.html', '_blank'); 
-}
-
+function redirectLogin() {
+    window.open("./pages/login.html", "_blank");
+  }
+  
 
 
 const bairros = (async function(){
@@ -31,3 +31,5 @@ const response = fetch('https://servicodados.ibge.gov.br/api/v1/localidades/muni
             console.log("Deu erro!")
         })
 */
+
+

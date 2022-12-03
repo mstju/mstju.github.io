@@ -59,10 +59,16 @@
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         class="form-control form-control-lg"
                         placeholder="Digite seu E-mail"
                         required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                        oninvalid="this.setCustomValidity('E-mail inválido')"
+                        oninput="setCustomValidity('')"
                       />
+
+
 
                       <label
                         class="form-label mt-4 secondary-color"
@@ -75,6 +81,8 @@
                         class="form-control form-control-lg"
                         placeholder="Digite sua Senha"
                         required
+                        oninvalid="this.setCustomValidity('Digite sua senha')"
+                        oninput="setCustomValidity('')"
                       />
                       <input
                         class="btn btn-outline-dark btn-lg px-5 mt-5"

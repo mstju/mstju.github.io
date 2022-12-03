@@ -249,7 +249,7 @@ ul {
     margin-bottom: 30px;
   }
 }
-@media (min-width: 480px) and (max-width: 1204px){
+@media (min-width: 480px) and (max-width: 1024px){
   .footer-section {
     width: 100%;
   }
@@ -265,4 +265,10 @@ ul {
   }
 }
 
+@media (min-width: 1024px) {
+.header-content {
+  display: flex;
+  align-items: center;
+}
 
+}
