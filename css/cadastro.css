@@ -10,6 +10,7 @@ body {
   background-image: url(../imagens/background.jpg);
   background-size: cover;
   background-position: 50%;
+  height: 100vh;
 }
 
 .bg-primary-color {
@@ -72,4 +73,17 @@ form {
 #submit-login {
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.nomeCompleto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nome {
+  width: 49.5%;
+}
+
+.sobrenome {
+  width: 49.5%;
 }

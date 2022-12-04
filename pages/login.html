@@ -36,7 +36,6 @@
   </head>
 
   <body>
-    <section class="vh-100" id="login-container">
       <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
           <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -53,36 +52,22 @@
 
                   <section>
                     <form>
-                      <label class="form-label secondary-color" for="email"
-                        >E-mail</label
-                      >
                       <input
                         type="email"
                         id="email"
                         name="email"
-                        class="form-control form-control-lg"
+                        class="form-control form-control-lg "
                         placeholder="Digite seu E-mail"
                         required
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        oninvalid="this.setCustomValidity('E-mail inválido')"
-                        oninput="setCustomValidity('')"
                       />
 
-
-
-                      <label
-                        class="form-label mt-4 secondary-color"
-                        for="password"
-                        >Senha</label
-                      >
                       <input
                         type="password"
                         id="password"
-                        class="form-control form-control-lg"
+                        class="form-control form-control-lg mt-2"
                         placeholder="Digite sua Senha"
                         required
-                        oninvalid="this.setCustomValidity('Digite sua senha')"
-                        oninput="setCustomValidity('')"
                       />
                       <input
                         class="btn btn-outline-dark btn-lg px-5 mt-5"
@@ -117,6 +102,5 @@
           </div>
         </div>
       </div>
-    </section>
   </body>
 </html>

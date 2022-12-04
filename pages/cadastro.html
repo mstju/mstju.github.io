@@ -39,94 +39,85 @@
   </head>
 
   <body>
-    <section class="vh-100" id="login-container">
-      <div class="container py-5 h-100">
-        <div class="row d-flex justify-content-center align-items-center h-100">
-          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-            <div class="card bg-light text-white" style="border-radius: 2rem">
-              <div class="card-body p-5 text-center">
-                <div class="md-4">
-                  <img
-                    src="../imagens/sobre-black.png"
-                    onclick="redirectHome()"
-                    role="button"
-                    class="img-fluid w-25 p-2 mb-2"
-                    alt="..."
-                  />
+    <div class="container h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-light text-white" style="border-radius: 2rem">
+            <div class="card-body py-5 text-center">
+              <div class="md-4">
+                <img
+                  src="../imagens/sobre-black.png"
+                  onclick="redirectHome()"
+                  role="button"
+                  class="img-fluid w-25 p-2 mb-2"
+                  alt="..."
+                />
 
-                  <section>
-                    <form>
-                      <label
-                        class="form-label mt-4 secondary-color"
-                        for="text"
-                        >Nome Completo</label
-                      >
-                      <input
-                        type="text"
-                        id="name"
-                        class="form-control form-control-lg"
-                        placeholder="Digite seu nome completo"
-                        required
-                      />
-
-                      <label
-                      class="form-label mt-4 secondary-color"
-                      for="text"
-                      >teste</label
-                    >
+                <form>
+                  <section class="nomeCompleto">
                     <input
                       type="text"
-                      id="data"
-                      name="data"
-                      placeholder="Data de Nascimento"
-                      class="form-control form-control-lg"
+                      id="name"
+                      class="nome form-control form-control-lg col-4"
+                      placeholder="Nome"
                       required
                     />
-                      
-                      <label class="form-label secondary-color mt-4" for="cpf"
-                        >CPF ou CNPJ</label
-                      >
-                      <input
-                        type="text"
-                        id="cpfOuCnpj"
-                        name="cpfOuCnpj"
-                        class="form-control form-control-lg cpfOuCnpj"
-                        placeholder="Digite seu CPF ou CNPJ"
-                        required
-                      />
-                      <input
-                        class="btn btn-outline-dark btn-lg px-5 mt-5"
-                        type="submit"
-                        value="Login"
-                        id="submit-login"
-                      />
-                    </form>
+                    <input
+                      type="text"
+                      id="name"
+                      class="sobrenome form-control form-control-lg col-4"
+                      placeholder="Sobrenome"
+                      required
+                    />
                   </section>
+                  <input
+                    type="text"
+                    id="data"
+                    name="data"
+                    placeholder="Data de Nascimento"
+                    class="form-control form-control-lg"
+                    required
+                  />
 
-                  <p class="small pb-lg-2 mt-4">
-                    <a
-                      class="links-register links-color fs-6 text-decoration-none"
-                      href="#!"
-                      >Esqueci minha senha</a
-                    >
-                  </p>
-                </div>
+                  <input
+                    type="text"
+                    id="cpfOuCnpj"
+                    name="cpfOuCnpj"
+                    class="form-control form-control-lg cpfOuCnpj"
+                    placeholder="Digite seu CPF ou CNPJ"
+                    required
+                  />
+                  <input
+                    class="btn btn-outline-dark btn-lg px-5 mt-5"
+                    type="submit"
+                    value="Login"
+                    id="submit-login"
+                  />
+                </form>
 
-                <div>
-                  <p class="mb-0 text-black">
-                    Não tem uma conta?
-                    <a
-                      href="#!"
-                      class="links-register register links-color fw-bold"
-                      >Cadastre-se</a
-                    >
-                  </p>
-                </div>
+                <p class="small pb-lg-2 mt-4">
+                  <a
+                    class="links-register links-color fs-6 text-decoration-none"
+                    href="#!"
+                    >Esqueci minha senha</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <p class="mb-0 text-black">
+                  Não tem uma conta?
+                  <a
+                    href="#!"
+                    class="links-register register links-color fw-bold"
+                    >Cadastre-se</a
+                  >
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </body>
 </html>
