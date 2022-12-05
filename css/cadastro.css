@@ -50,11 +50,14 @@ body {
   transition: 0.8s;
 }
 
-.card {
+.card-body {
   -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   border: 2px solid #000;
+  background-color: lightblue;
+  border-radius: 2rem
+  
 }
 
 .links-register:hover {
@@ -75,15 +78,31 @@ form {
   transform: translateX(-50%);
 }
 
-.nomeCompleto {
+.nome,
+.sobrenome,
+.password,
+.dataC {
+  width: 49.5%;
+}
+
+.cep,
+.uf,
+.numero {
+  width: 32.3%;
+}
+
+.senha,
+.dataCPF,
+.nomeCompleto,
+.endereco {
   display: flex;
   justify-content: space-between;
 }
 
-.nome {
-  width: 49.5%;
+.container {
+  position: relative;
 }
 
-.sobrenome {
-  width: 49.5%;
+.card-body {
+  position: absolute;
 }
