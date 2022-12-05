@@ -70,11 +70,6 @@
 // }
 
 
-// function redirectHome() {
-//    window.open('../index.html', '_blank'); 
-// }
-
-
 //função que redireciona pra home
 function redirectHome(){
    window.open('../index.html', '_blank'); 
