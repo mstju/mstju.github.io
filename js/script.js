@@ -6,7 +6,7 @@ function redirectLogin() {
 
 
     const URL = 'https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos'  
-
+    const form = {}
     const options = {
     method: 'GET',
     mode: 'cors',
@@ -18,32 +18,24 @@ function redirectLogin() {
             response.json()
         .then(data => {
             console.log(data)
+        data.forEach(bairro => {
+            const select = document.getElementById('bairro')
+            select.innerHTML += `<option value="${bairro.id}"> ${bairro.nome}</option>`
+        })    
         })    
     })
 
-    /*     
-            document.querySelector("#districtOption").innerHTML += <p>${data}</p>
-           
-        })  */
-
-            
-    
     .catch (function (e){
             console.log("Deu erro!")
     })
     
+    function obterBairro(event){
+        form['bairro_id'] = event.target.value
+        console.log(form);
+        
+    }
 
 
 
-    /* OUTRA FORMA
-    const response = (async function(){
-    try{    
-        const response = await fetch('https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos')
-        const jsonData = await response.json()
-        console.log(jsonData)
-    }catch(e){
-        console.log('Deu erro!')
-    }    
-    })()
-    */
+
 
