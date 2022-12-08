@@ -11,6 +11,7 @@ body {
   background-size: cover;
   background-position: 50%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .bg-primary-color {
@@ -49,15 +50,20 @@ body {
 .btn:hover {
   transition: 0.8s;
 }
+.card {
+  background-color: transparent;
+}
 
 .card-body {
   -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   border: 2px solid #000;
-  background-color: lightblue;
-  border-radius: 2rem
-  
+  border-radius: 2rem;
+}
+
+.img-fluid {
+  width: 15% !important;
 }
 
 .links-register:hover {
@@ -100,9 +106,5 @@ form {
 }
 
 .container {
-  position: relative;
-}
-
-.card-body {
-  position: absolute;
+  margin-top: 1%;
 }

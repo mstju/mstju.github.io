@@ -40,15 +40,15 @@
 
   <body>
     <div class="container w-50">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="card" style="border-radius: 2rem">
-          <div class="card-body py-5 text-center bg-light">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="card">
+          <div class="card-body text-center bg-light">
             <div class="md-4">
               <img
                 src="../imagens/sobre-black.png"
                 onclick="redirectHome()"
                 role="button"
-                class="img-fluid w-25 p-2 mb-2"
+                class="img-fluid mb-2"
                 alt="..."
               />
 
@@ -117,6 +117,7 @@
                 <section class="endereco">
                   <input
                     type="text"
+                    onblur="pesquisacep(this.value);"
                     id="cep"
                     name="cep"
                     class="cep mt-1 form-control form-control-lg"
@@ -166,7 +167,7 @@
                 />
 
                 <input
-                  class="btn btn-outline-dark btn-lg px-5 mt-5"
+                  class="btn btn-outline-dark btn-lg px-5 mt-3"
                   type="submit"
                   value="Cadastrar"
                   id="submit-login"
@@ -185,7 +186,7 @@
             <div>
               <p class="mb-0 text-black">
                 Já possui uma conta?
-                <a href="#!" class="links-register register links-color fw-bold"
+                <a href="../pages/login.html" class="links-register register links-color fw-bold"
                   >Entre</a
                 >
               </p>
