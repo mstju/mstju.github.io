@@ -79,16 +79,16 @@
         <div class="container-form ">
           <h2 class="form-title mb-4">Encontre a loja dos seus sonhos!</h2>
           <form>
-            <select id="stateOption"class="form-select mb-3 p-2 w-100">
-              <option selected>Estado</option>
+            <select id="cidade" onchange="obterCidade()" class="form-select mb-3 p-2 w-100">
+              <option value="0" selected>Cidade</option>
               <option value="1">São Paulo</option>
             </select>
             <select id="bairro" onchange="obterBairro(event)" class="form-select mb-3 p-2 w-100">
-              <option selected id="district">Bairro</option>
+              <option selected>Bairro</option>
               <option id="districtOption" value=""></option>
             </select>
             <select class="form-select mb-3 p-2 w-100">
-              <option selected>Valor</option>
+              <option value="0" selected>Valor</option>
               <option value="1">até R$1.000,00</option>
               <option value="2">R$1.000,00 a R$2.000,00</option>
               <option value="3">R$2.0000,00 a R$3.000,00</option>
@@ -210,6 +210,6 @@
   crossorigin="anonymous"
   ></script>
   <!--Meu JS-->
-  <script src="./js/script.js"></script> 
+  <script src="./js/script.js" defer></script> 
   </body>
 </html>
