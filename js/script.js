@@ -6,22 +6,19 @@ function redirectLogin() {
 
 //Select Cidade
 
-
-/*const textCidade = cidade.options[cidade.selectedIndex].text;
-
 function obterCidade(){
     const cidade = document.querySelector("#cidade");
-    const optionValue = cidade.options[cidade.selectedIndex];
-    let valueCidade = optionValue.value
-    let textCidade = optionValue.text
+    const optionValueCidade = cidade.options[cidade.selectedIndex];
+    let valueCidade = optionValueCidade.value
+    let textCidade = optionValueCidade.text
     console.log(valueCidade,textCidade)
 }
 
-obterCidade()*/
+obterCidade()
 
 
 //Select Bairros
-    /*const URL = 'https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos'  
+    const URL = 'https://servicodados.ibge.gov.br/api/v1/localidades/municipios/3550308/distritos'  
     const form = {}
     const options = {
     method: 'GET',
@@ -49,25 +46,52 @@ obterCidade()*/
         form['bairro_id'] = event.target.value
         console.log(form);
         
-    }*/
+    }
 
+//Select Valor Locação
 
-    //Select Cidade
-
-
-/*const textCidade = cidade.options[cidade.selectedIndex].text;
-
-function obterCidade(){
-    const cidade = document.querySelector("#cidade");
-    const optionValue = cidade.options[cidade.selectedIndex];
-    let valueCidade = optionValue.value
-    let textCidade = optionValue.text
-    console.log(valueCidade,textCidade)
+function obterValorLocacao(){
+    const valorLocacao = document.querySelector("#valorLocacao");
+    const optionValueLocacao = valorLocacao.options[valorLocacao.selectedIndex];
+    let valueValorLocacao = optionValueLocacao.value
+    let textValorLocacao = optionValueLocacao.text
+    console.log(valueValorLocacao,textValorLocacao)
 }
 
-obterCidade()*/
+obterValorLocacao()
 
+//Select obterTamanho
 
+function obterTamanho(){
+    const tamanho = document.querySelector("#tamanho");
+    const optionTamanho = tamanho.options[tamanho.selectedIndex];
+    let valueTamanho = optionTamanho.value
+    let textTamanho = optionTamanho.text
+    console.log(valueTamanho,textTamanho)
+}
 
+obterTamanho()
 
+//Select Estabelecimento
 
+function obterEstabelecimento(){
+    const estabelecimento = document.querySelector("#estabelecimento");
+    const optionEstabelecimento = estabelecimento.options[estabelecimento.selectedIndex];
+    let valueEstabelecimento = optionEstabelecimento.value
+    let textEstabelecimento = optionEstabelecimento.text
+    console.log(valueEstabelecimento,textEstabelecimento)
+}
+
+obterTipo()
+
+//Select Tipo
+
+function obterTipo(){
+    const tipo = document.querySelector("#tipo");
+    const optionTipo = tipo.options[tipo.selectedIndex];
+    let valueTipo = optionTipo.value
+    let textTipo = optionTipo.text
+    console.log(valueTipo,textTipo)
+}
+
+obterTipo()
