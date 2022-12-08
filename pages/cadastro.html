@@ -39,157 +39,161 @@
   </head>
 
   <body>
-    <div class="container w-50">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="card">
-          <div class="card-body text-center bg-light">
-            <div class="md-4">
-              <img
-                src="../imagens/sobre-black.png"
-                onclick="redirectHome()"
-                role="button"
-                class="img-fluid mb-2"
-                alt="..."
-              />
-
-              <form>
-                <section class="nomeCompleto">
-                  <input
-                    type="text"
-                    id="name"
-                    class="nome form-control form-control-lg col-4"
-                    placeholder="Nome"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="name"
-                    class="sobrenome form-control form-control-lg col-4"
-                    placeholder="Sobrenome"
-                    required
-                  />
-                </section>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  class="mt-1 form-control form-control-lg"
-                  placeholder="Digite seu e-mail"
-                  required
-                />
-                <section class="dataCPF">
-                  <input
-                    type="text"
-                    id="data"
-                    name="data"
-                    placeholder="Data de Nascimento"
-                    class="dataC mt-1 form-control form-control-lg"
-                    required
-                  />
-
-                  <input
-                    type="text"
-                    id="cpfOuCnpj"
-                    name="cpfOuCnpj"
-                    class="dataC mt-1 form-control form-control-lg cpfOuCnpj"
-                    placeholder="CPF ou CNPJ"
-                    required
-                  />
-                </section>
-                <section class="senha">
-                  <input
-                    type="password"
-                    id="password"
-                    name="password"
-                    class="password mt-1 form-control form-control-lg"
-                    placeholder="Digite a sua senha"
-                    required
-                  />
-                  <input
-                    type="password"
-                    id="passwordRepeat"
-                    name="passwordRepeat"
-                    class="password mt-1 form-control form-control-lg"
-                    placeholder="Repita a sua senha"
-                    required
-                  />
-                </section>
-                <section class="endereco">
-                  <input
-                    type="text"
-                    onblur="pesquisacep(this.value);"
-                    id="cep"
-                    name="cep"
-                    class="cep mt-1 form-control form-control-lg"
-                    placeholder="CEP"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="uf"
-                    name="uf"
-                    class="uf mt-1 form-control form-control-lg"
-                    placeholder="UF"
-                    required
-                  />
-                  <input
-                    type="text"
-                    id="numero"
-                    name="numero"
-                    class="numero mt-1 form-control form-control-lg"
-                    placeholder="Número"
-                    required
-                  />
-                </section>
-                <input
-                  type="text"
-                  id="bairro"
-                  name="bairro"
-                  class="bairro mt-1 form-control form-control-lg"
-                  placeholder="Bairro"
-                  required
-                />
-                <input
-                  type="text"
-                  id="cidade"
-                  name="cidade"
-                  class="mt-1 form-control form-control-lg"
-                  placeholder="Cidade"
-                  required
-                />
-                <input
-                  type="text"
-                  id="rua"
-                  name="rua"
-                  class="rua mt-1 form-control form-control-lg"
-                  placeholder="Rua"
-                  required
+    <div class="container py-2 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-light text-white" style="border-radius: 2rem">
+            <div class="card-body p-3 text-center">
+              <div class="md-4">
+                <img
+                  src="../imagens/sobre-black.png"
+                  onclick="redirectHome()"
+                  role="button"
+                  class=" mb-2 logo"
+                  alt="..."
                 />
 
-                <input
-                  class="btn btn-outline-dark btn-lg px-5 mt-3"
-                  type="submit"
-                  value="Cadastrar"
-                  id="submit-login"
-                />
-              </form>
+                <form>
+                  <section class="nomeCompleto">
+                    <input
+                      type="text"
+                      id="name"
+                      class="nome form-control form-control-lg col-4"
+                      placeholder="Nome"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="name"
+                      class="sobrenome form-control form-control-lg col-4"
+                      placeholder="Sobrenome"
+                      required
+                    />
+                  </section>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="mt-1 form-control form-control-lg"
+                    placeholder="Digite seu e-mail"
+                    required
+                  />
+                  <section class="dataCPF">
+                    <input
+                      type="text"
+                      id="data"
+                      name="data"
+                      placeholder="Data de Nascimento"
+                      class="dataC mt-1 form-control form-control-lg"
+                      required
+                    />
 
-              <p class="small pb-lg-2 mt-4">
-                <a
-                  class="links-register links-color fs-6 text-decoration-none"
-                  href="#!"
-                  >Esqueci minha senha</a
-                >
-              </p>
-            </div>
+                    <input
+                      type="text"
+                      id="cpfOuCnpj"
+                      name="cpfOuCnpj"
+                      class="dataC mt-1 form-control form-control-lg cpfOuCnpj"
+                      placeholder="CPF ou CNPJ"
+                      required
+                    />
+                  </section>
+                  <section class="senha">
+                    <input
+                      type="password"
+                      id="password"
+                      name="password"
+                      class="password mt-1 form-control form-control-lg"
+                      placeholder="Digite a sua senha"
+                      required
+                    />
+                    <input
+                      type="password"
+                      id="passwordRepeat"
+                      name="passwordRepeat"
+                      class="password mt-1 form-control form-control-lg"
+                      placeholder="Repita a sua senha"
+                      required
+                    />
+                  </section>
+                  <section class="endereco">
+                    <input
+                      type="text"
+                      onblur="pesquisacep(this.value);"
+                      id="cep"
+                      name="cep"
+                      class="cep mt-1 form-control form-control-lg"
+                      placeholder="CEP"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="uf"
+                      name="uf"
+                      class="uf mt-1 form-control form-control-lg"
+                      placeholder="UF"
+                      required
+                    />
+                    <input
+                      type="text"
+                      id="numero"
+                      name="numero"
+                      class="numero mt-1 form-control form-control-lg"
+                      placeholder="Número"
+                      required
+                    />
+                  </section>
+                  <input
+                    type="text"
+                    id="bairro"
+                    name="bairro"
+                    class="bairro mt-1 form-control form-control-lg"
+                    placeholder="Bairro"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="cidade"
+                    name="cidade"
+                    class="mt-1 form-control form-control-lg"
+                    placeholder="Cidade"
+                    required
+                  />
+                  <input
+                    type="text"
+                    id="rua"
+                    name="rua"
+                    class="rua mt-1 form-control form-control-lg"
+                    placeholder="Rua"
+                    required
+                  />
 
-            <div>
-              <p class="mb-0 text-black">
-                Já possui uma conta?
-                <a href="../pages/login.html" class="links-register register links-color fw-bold"
-                  >Entre</a
-                >
-              </p>
+                  <input
+                    class="btn btn-outline-dark btn-lg px-5 mt-3"
+                    type="submit"
+                    value="Cadastrar"
+                    id="submit-login"
+                  />
+                </form>
+
+                <p class="small pb-lg-2 mt-4">
+                  <a
+                    class="links-register links-color fs-6 text-decoration-none"
+                    href="#!"
+                    >Esqueci minha senha</a
+                  >
+                </p>
+              </div>
+
+              <div>
+                <p class="mb-0 text-black">
+                  Já possui uma conta?
+                  <a
+                    href="../pages/login.html"
+                    class="links-register register links-color fw-bold"
+                    >Entre</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>

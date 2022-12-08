@@ -91,6 +91,12 @@ $(document).ready(function () {
   return false;
 });
 
+//máscara cep
+$(document).ready(function () {
+   $("#cep").mask("00000-000");
+   return false;
+ });
+
 //
 
 function limpa_formulário_cep() {
