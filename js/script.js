@@ -1,5 +1,6 @@
 
 // função que faz abrir o link em outra aba
+
 function redirectLogin() {
     window.open("./pages/login.html", "_blank");
   }
