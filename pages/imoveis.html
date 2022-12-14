@@ -84,10 +84,10 @@
     </header>
     <main>
       <div class="container-fluid flex text-center my-5">
-        <p class="h1">Lojas selecionadas pra você!</p>
+        <h1>Lojas selecionadas pra você!</h1>
       </div>
 
-      <div class="container mt-1 mb-5">
+      <div class="container mt-1 mb-5" id="container-cards">
         <div class="row align-items-center justify-content-center">
           <div class="col mb-5">
             <div
@@ -258,60 +258,39 @@
         </div>
       </div>
 
-      <form
-        id="form"
-        class="container col px-4 py-4 m-5 mt-5 border rounded-3 bg-light"
-      >
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 p-2 text-center">
-            <h2 class="text-uppercase">alugue agora!</h2>
+      <div class="form-container">
+        <h2 class="text-uppercase">alugue sua loja agora!</h2>
+        <form id="rent-form">
+          <div class="full-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
           </div>
-          <div class="col sm-8 md-6 col-lg-5 mx-auto">
-            <div class="form-floating mb-4">
-              <label for="contactName" class="form-label">Nome Completo</label>
-              <input
-                type="text"
-                class="form-control"
-                id="contactName"
-                placeholder="Nome Completo"
-              />
-            </div>
-            <div class="form-floating mb-4">
-              <label for="email" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="name@example.com"
-              />
-            </div>
-            <div class="form-floating mb-4">
-              <label for="phone" class="form-label"
-                >Telefone de Contato (Celular)
-              </label>
-              <input
-                type="tel"
-                class="form-control"
-                id="phone"
-                placeholder="Celular"
-              />
-            </div>
-            <div class="form-floating mb-4">
-              <label for="message" class="form-label">Mensagem</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
-            </div>
-            <div class="col-12 p-2 text-center">
-              <button
-                class="w-50 btn btn btn-lg"
-                type="submit"
-                class="btn btn-primary"
-              >
-                Submit
-              </button>
-            </div>
+          <div class="half-box spacing">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
           </div>
-        </div>
-      </form>
+          <div class="half-box">
+            <label for="lastname">Sobrenome</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+          </div>
+          <div class="full-box">
+            <label for="phone">Telefone Celular</label>
+            <input type="tel" name="phone" id="phone" placeholder="Digite seu celular com DDD">
+          </div>
+          <div class="full-box">
+            <label for="message">Mensagem</label>
+            <input type="text" name="message" id="message" placeholder="Digite sua mensagem">
+          </div>
+          <div class="full-box">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label">Li e aceito os <a href="#">termos de uso</a> </label>
+          </div>
+          <div class="full-box">
+            <input type="submit" id="btn-submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+      <p class="error-vadidation template"></p>  
     </main>
 
     <script
