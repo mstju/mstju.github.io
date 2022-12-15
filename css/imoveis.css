@@ -221,6 +221,15 @@
             width: auto;
         }
 
+        .button_send{
+            height: 2.5rem;
+            width: 8rem;
+            border-radius: 20px;
+            color: rgba(0, 0, 0, 0.623);
+            font-weight: bold;
+            margin-left: 11rem;
+        }
+
        .error-vadidation{
         color: rgb(37, 36, 36);
         position: absolute;

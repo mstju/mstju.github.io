@@ -1,4 +1,4 @@
-class Validator{
+/*class Validator{
 
     constructor(){
         this.validations = [
@@ -34,7 +34,7 @@ class Validator{
 let form = document.getElementById("form-container");
 let submit = document.getElementById("btn-submit");
 
-let validator = new Validator();
+let validator = new Validator();*/
 
 // evento que dispara as validações
 

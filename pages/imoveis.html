@@ -88,7 +88,7 @@
       </div>
 
       <div class="container mt-1 mb-5" id="container-cards">
-        <div class="row align-items-center justify-content-center">
+        <div class="row d-flex align-items-center justify-content-center">
           <div class="col mb-5">
             <div
               class="image-flip my-5 mx-3"
@@ -279,15 +279,13 @@
           </div>
           <div class="full-box">
             <label for="message">Mensagem</label>
-            <input type="text" name="message" id="message" placeholder="Digite sua mensagem">
+            <input type="text" name="message" rows="4" cols="30" id="message" placeholder="Digite sua mensagem">
           </div>
           <div class="full-box">
             <input type="checkbox" name="agreement" id="agreement">
             <label for="agreement" id="agreement-label">Li e aceito os <a href="#">termos de uso</a> </label>
           </div>
-          <div class="full-box">
-            <input type="submit" id="btn-submit" value="Enviar">
-          </div>
+            <button class="button_send" type="submit" id="btn-submit" onclick="btn()">Enviar!</button>
         </form>
       </div>
       <p class="error-vadidation template"></p>  
