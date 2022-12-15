@@ -45,7 +45,7 @@ submit.addEventListener('click', function(e){
 
 // Função para validar inputs
 
-/*
+
 function sendbtn(){
     $("#rent-form").submit(function(event){
         event.preventDefault();
@@ -87,5 +87,3 @@ function sendbtn(){
 }
 
 //Função para validar input de telefone*/
-
-console.log("Olá");
