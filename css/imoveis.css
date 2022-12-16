@@ -50,81 +50,19 @@
             margin-bottom: -50px;
         }
 
-        .image-flip:hover .backside, .image-flip.hover .backside {
-            -webkit-transform: rotateY(0deg);
-            -moz-transform: rotateY(0deg);
-            -o-transform: rotateY(0deg);
-            -ms-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+        .col{
+            flex: 1 1 30%;
         }
-            
-        .image-flip:hover .frontside, .image-flip.hover .frontside {
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -o-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-        }
-            
-        .image-flip {
-            margin-bottom: 200px;
-            width: 300px;
-            height: 250px;
-        }
-            
-        .mainflip {
-            -webkit-transition: 1s;
-            -webkit-transform-style: preserve-3d;
-            -ms-transition: 1s;
-            -moz-transition: 1s;
-            -moz-transform: perspective(1000px);
-            -moz-transform-style: preserve-3d;
-            -ms-transform-style: preserve-3d;
-            transition: 1s;
-            transform-style: preserve-3d;
-            position: relative;
-        }
-            
-        .frontside, .backside {
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            backface-visibility: hidden;
-            -webkit-transition: 1s;
-            -webkit-transform-style: preserve-3d;
-            -moz-transition: 1s;
-            -moz-transform-style: preserve-3d;
-            -o-transition: 1s;
-            -o-transform-style: preserve-3d;
-            -ms-transition: 1s;
-            -ms-transform-style: preserve-3d;
-            transition: 1s;
-            transform-style: preserve-3d;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-            
-        .frontside {
-            -webkit-transform: rotateY(0deg);
-            -ms-transform: rotateY(0deg);
-            z-index: 2;
+        
+        .card{
+            border-width: 3px;
+            border-color: rgb(92, 91, 91);
+            height: 24rem;
+            /*width: 16rem;*/
         }
 
-        .card{
-                background-color: rgb(177, 174, 174);
-        }
-            
-        .backside {
-            background: white;
-            -webkit-transform: rotateY(-180deg);
-            -moz-transform: rotateY(-180deg);
-            -o-transform: rotateY(-180deg);
-            -ms-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
-        }
-            
-        .card-header{
-            border-radius: 5em 5em 0 0;
+        #card-group{
+            padding-top: 3rem;
         }
         
         input, label{
@@ -143,7 +81,7 @@
 
         .form-container{
             padding: 2rem;
-            margin-top: 6rem;
+            margin-top: 4rem;
             background-color: #640d14;
             width: 500px;
             margin-left: auto;
@@ -178,7 +116,7 @@
         }
 
         .spacing{
-            margin-right: 2,5%;
+            margin-right: 2.5%;
         }
 
         label{
