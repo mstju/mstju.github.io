@@ -119,36 +119,40 @@
       
       <div class="form-container">
         <h2 class="text-uppercase">alugue sua loja agora!</h2>
-        <form id="rent-form">
+        <form id="rent-form" method="post">
           <div class="full-box">
             <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            <span class="msg-error msg-email"></span>
           </div>
           <div class="half-box spacing">
             <label for="name">Nome</label>
-            <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+            <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            <span class="msg-error msg-name"></span>
           </div>
           <div class="half-box">
             <label for="lastname">Sobrenome</label>
-            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+            <span class="msg-error msg-lastname"></span>
           </div>
           <div class="full-box">
             <label for="phone">Telefone Celular</label>
-            <input type="tel" name="phone" id="phone" placeholder="Digite seu celular com DDD" required>
+            <input type="tel" name="phone" id="phone" placeholder="Digite seu celular com DDD">
+            <span class="msg-error msg-phone"></span>
           </div>
           <div class="full-box">
             <label for="message">Mensagem</label>
-            <input type="text" name="message" rows="4" cols="30" id="message" placeholder="Digite sua mensagem" required>
+            <input type="text" name="message" rows="4" cols="30" id="message" placeholder="Digite sua mensagem">
+            <span class="msg-error msg-message"></span>
           </div>
           <div class="full-box">
-            <input type="checkbox" name="agreement" id="agreement">
+            <input type="checkbox" name="agreement" id="agreement" required>
             <label for="agreement" id="agreement-label">Li e aceito os <a href="#">termos de uso</a> </label>
+            <span class="msg-error msg-agreement"></span>
           </div>
-          <div id="infos"></div>
-          <button class="button_send" type="submit" id="btn-submit" onclick="sendbtn()">Enviar!</button>
+          <button class="button_send" type="submit" id="btn-submit" onclick="validateForm()">Enviar!</button>
         </form>
       </div>
-      <p class="error-vadidation template"></p>  
     </main>
 
     <script
