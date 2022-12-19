@@ -36,7 +36,7 @@ function validateForm(evt) {
         box_name.innerHTML = 'Favor preencher o nome!';
         box_name.style.display = 'block';
         contError += 1;
-    }else if(name.length >= 3){
+    }else if(name.value.length >= 3){
         box_name.style.display = 'none';
     }else{
         box_name.innerHTML = 'O nome deve conter mais de 3 caracteres!';
@@ -49,7 +49,7 @@ function validateForm(evt) {
         box_lastname.innerHTML = 'Favor preencher o sobrenome!';
         box_lastname.style.display = 'block';
         contError += 1;
-    }else if(lastname.length >= 3){
+    }else if(lastname.value.length >= 3){
         box_lastname.style.display = 'none';
     }else{
         box_lastname.innerHTML = 'O sobrenome deve conter mais de 3 caracteres!';
@@ -75,7 +75,7 @@ function validateForm(evt) {
         box_message.innerHTML = 'Favor preencher a mensagem!';
         box_message.style.display = 'block';
         contError += 1;
-    }else if(message.length >= 5){
+    }else if(message.value.length >= 5){
         box_message.style.display = 'none';
     }else{
         box_message.innerHTML = 'A mensagem deve conter mais de 5 caracteres';
