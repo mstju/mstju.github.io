@@ -1,0 +1,78 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            font-size: 16px;
+
+        }
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        .navbar{
+            background-color: #640d14;
+        }
+        
+        .navbar-nav {
+            width: 100%; 
+            display: flex;
+            flex-wrap: no-wrap;
+            justify-content: space-around;
+        }
+
+        .navbar-nav > li {
+            flex-grow: 1;
+            text-align: justify;
+        }
+
+        .navbar img{
+            margin-left: 3rem;
+        }
+
+        .navbar-toggler .btn {
+            background-color: white;
+            border: black;
+        } 
+
+        .navbar-toggler {
+            background-color: white;
+        } 
+
+        .nav-link{
+            color: white;
+            font-weight: bold;
+        }
+
+        main{
+            display: flex;
+            justify-content: center;
+        }
+
+        h1{
+            font-weight: bolder;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .container-form{
+            padding: 2rem 10rem 2rem 10rem;
+            border: black;
+            border-radius: 20px;
+            background-color: #640d14;
+        }
+
+        select{
+            padding: 10px;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            border: none;
+            background-color: rgb(235, 232, 232);
+            color: black;
+        }
+
+        select:focus{
+            background-color: rgb(224, 194, 194);
+        }
