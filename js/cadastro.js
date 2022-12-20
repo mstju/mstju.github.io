@@ -160,3 +160,48 @@ function pesquisacep(valor) {
     limpa_formulário_cep();
   }
 }
+
+//máscara número de telefone
+$(document).ready(function() {
+  $("#cel").mask("(00) 0000-00009");
+//adicionando o formato com 9 digitos
+$("#cel").blur(function() {
+    if ($(this).val().length ==15){
+      $("#cel").mask("(00) 00000-0009");
+    }else{
+      $("#cel").mask("(00) 0000-00009");
+    }
+  })
+//Validando se o número possui 9 digitos:
+function validarTel() {
+  var telefone = document.getElementById('cel');
+
+  if (telefone.value.length == 15) {
+    telefone.setCustomValidity('');
+    return true;
+  } else {
+    telefone.setCustomValidity('O número de celular deve ter o formato: (XX) 9XXXX-XXXX');
+    telefone.reportValidity();
+    return false;
+  }
+}
+password.addEventListener('input',validarTel);
+})
+
+//confirmar se as senhas são iguais:
+function validarCadastro() {
+  
+  var password = document.getElementById('password');
+  var passwordConfirm = document.getElementById('passwordConfirm');
+
+  if (password.value === passwordConfirm.value) {
+    passwordConfirm.setCustomValidity('');
+    return true;
+  } else {
+    passwordConfirm.setCustomValidity('As senhas devem ser iguais');
+    passwordConfirm.reportValidity();
+    return false;
+  }
+}
+//Código para a mensagem sumir quando as senhas forem iguais:
+password.addEventListener('input',validarCadastro);

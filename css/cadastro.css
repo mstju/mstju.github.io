@@ -84,6 +84,7 @@ form {
 .nome,
 .sobrenome,
 .password,
+.telefone,
 .dataC {
   width: 49.5%;
 }

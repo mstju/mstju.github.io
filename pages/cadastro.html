@@ -94,6 +94,17 @@
                     placeholder="Digite seu e-mail"
                     required
                   />
+
+                  <section class="cel">
+                    <input
+                      type="text"
+                      id="cel"
+                      name="celular"
+                      placeholder="Digite seu Número de celular"
+                      class="tel mt-1 form-control form-control-lg"
+                      required
+                      />
+
                   <section class="dataCPF">
                     <input
                       type="text"
@@ -186,7 +197,8 @@
                   <input
                     class="btn btn-outline-dark btn-lg px-5 mt-3"
                     type="submit"
-                    onclick="validarSenha()"
+                    onclick="validarCadastro()"
+                    ondblclick="validarTel()"
                     value="Cadastrar"
                     id="submit-login"
                   />
