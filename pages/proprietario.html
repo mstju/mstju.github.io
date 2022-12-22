@@ -103,7 +103,9 @@
                 <option value="4">R$3.0000,00 a R$5.000,00</option>
                 <option value="5">R$5.0000,00 a R$7.000,00</option>
                 <option value="6">R$7.0000,00 a R$9.000,00</option>
-                <option value="7">mais de R$10.000,00</option>
+                <option value="7">R$10.000,00 a R$15.000,00</option>
+                <option value="8">R$15.000,00 a R$20.000,00</option>
+                <option value="9">mais de R$20.000,00</option>
                 </select>
                 <select
                 id="tamanho"
@@ -113,11 +115,12 @@
                 <option value="0" selected>Tamanho</option>
                 <option value="1">até 20m²</option>
                 <option value="2">de 20m² a 50m²</option>
-                <option value="3">de 50m² a 1000m²</option>
+                <option value="3">de 50m² a 100m²</option>
                 <option value="4">de 100m² a 200m²</option>
                 <option value="5">de 200m² a 300m²</option>
                 <option value="6">de 300m² a 500m²</option>
-                <option value="7">mais de 500m²</option>
+                <option value="7">de 500m² a 1000m²</option>
+                <option value="8">mais de 1000m²</option>
                 </select>
                 <select
                 id="estabelecimento"
@@ -135,14 +138,40 @@
                 class="form-select mb-3 p-2 w-100"
                 >
                 <option value="0" selected>Tipo</option>
-                <option value="1">Lojas</option>
+                <option value="1">Lojas de Shopping / Galerias</option>
                 <option value="2">Quiosques</option>
-                <option value="3">Alimentação</option>
+                <option value="3">Lojas de Alimentação de Shopping / Galerias</option>
                 <option value="4">Boxes</option>
+                <option value="5">Lojas de Rua</option>
+                <option value="5">Lojas de Alimentação de Rua</option>
                 </select>
+                <form id="rent-form" method="post">
+                  <div class="full-box">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+                    <span class="msg-error msg-email"></span>
+                  </div>
+                  <div class="half-box spacing">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                    <span class="msg-error msg-name"></span>
+                  </div>
+                  <div class="half-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome">
+                    <span class="msg-error msg-lastname"></span>
+                  </div>
+                  <div class="full-box">
+                    <label for="phone">Telefone Celular</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Digite seu celular com DDD">
+                    <span class="msg-error msg-phone"></span>
+                  </div>
+                </div>
+                <div>
                 <button type="submit" class="btn btn-outline-dark btn-lg px-5 mt-4">
-                Buscar
+                Enviar
                 </button>
+                </div>
             </form>
             </div>
         </div>
