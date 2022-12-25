@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(../img/fundo/background.jpg);
+  background-image: url(../img/fundo/dark-bg.jpg);
   background-size: cover;
   background-position: 50%;
   height: 100vh;
@@ -34,16 +34,23 @@ body {
 }
 
 .links-color {
-  color: #640d14;
+  color: #000;
 }
 
 .register {
   text-decoration: none;
 }
 
+.form-control {
+  background-color: rgb(32, 32, 32);
+  border: none;
+}
+
 .form-control:focus {
-  border-color: #ff0000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  background-color: rgb(32, 32, 32);
+  border: 1px solid white;
+  border-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 .btn:hover {
@@ -56,26 +63,9 @@ body {
   box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
   border: 2px solid #000;
 }
-
 .login-bg {
-  background-color: #f8f9fa!important;
+  background-color: #a9a9a9 !important;
 }
-
-
-.moon-icon,
-.sun-icon {
-  transition: transform 1s;
-}
-
-.moon-icon {
-  transform: rotate(360deg);
-}
-
-.sun-icon {
-  transform: rotate(180deg);
-}
-
-
 
 .links-register:hover {
   color: #000;
@@ -86,7 +76,6 @@ input::placeholder {
   font-size: 1rem;
 }
 
-
 form {
   text-align: left;
 }
@@ -95,7 +84,6 @@ form {
   margin-left: 50%;
   transform: translateX(-50%);
 }
-
 
 /* botão de modo noturno */
 
@@ -106,13 +94,11 @@ form {
   height: 34px;
 }
 
-
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-
 
 .slider {
   position: absolute;
@@ -122,8 +108,8 @@ form {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 34px;
   display: flex;
   align-items: center;
@@ -138,32 +124,15 @@ input:focus + .slider {
   box-shadow: 0 0 1px #333333;
 }
 
-
 .slider i {
   color: #000;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider i {
   color: #fff;
 }
 
-
 .sun-icon {
   display: none;
 }
-
-
-/* imagem preta de fundo */
-.bg-image {
-  background-image: url('../img/fundo/dark-bg.jpg');
-}
-
-.bg-l {
-  background-color: #8B0000!important;
-}
-
-.bg-d {
-  background-color: #f8f9fa!important;
-}
-
