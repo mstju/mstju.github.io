@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">.
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+    <button id="button"><i class="fas fa-moon icon"></i></button>
+    <script>
+const button = document.getElementById("button");
+
+button.addEventListener("click", () => {
+  const icon = button.querySelector("i");
+  if (icon.classList.contains("fa-moon")) {
+    icon.classList.replace("fa-moon", "fa-sun");
+    icon.style.transform = "rotate(180deg)";
+  } else {
+    icon.classList.replace("fa-sun", "fa-moon");
+    icon.style.transform = "rotate(0deg)";
+  }
+});
+
+</script>
+</body>
+</html>
