@@ -102,8 +102,8 @@
               <label class="switch">
                 <input type="checkbox" id="switch" />
                 <span class="slider round">
-                  <i class="fa fa-moon moon-icon "></i>
-                  <i class="fa fa-sun sun-icon "></i>
+                  <i class="fa fa-moon moon-icon"></i>
+                  <i class="fa fa-sun sun-icon"></i>
                 </span>
               </label>
             </div>
@@ -142,7 +142,7 @@
           sunIcon.style.display === "block" ? "none" : "block";
       });
 
-        // alternar arquivos css
+      // alternar arquivos css
       const link = document.getElementById("css");
 
       switchInput.addEventListener("change", () => {
@@ -151,6 +151,7 @@
         } else {
           link.href = "../css/login.css";
         }
+        document.querySelector(".moon-icon").classList.toggle("girando");
       });
     </script>
   </body>

@@ -153,6 +153,11 @@ input:checked + .slider i {
   display: none;
 }
 
+.moon-icon.girando {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(300deg);
+}
+
 
 /* imagem preta de fundo */
 .bg-image {
