@@ -99,59 +99,28 @@
                   >
                 </p>
               </div>
-              <label class="switch">
-                <input type="checkbox" id="switch" />
-                <span class="slider round">
-                  <i class="fa fa-moon moon-icon"></i>
-                  <i class="fa fa-sun sun-icon"></i>
-                </span>
-              </label>
+              <button id="button"><i class="fas fa-moon icon"></i></button>
+
             </div>
           </div>
         </div>
       </div>
     </div>
     <script>
-      /* alternando entre os backgrounds */
-      const switchInput = document.getElementById("switch");
-      const links = document.getElementsByTagName("a");
-      const body = document.querySelector("body");
-
-      switchInput.addEventListener("change", () => {
-        body.classList.toggle("bg-image");
-      });
-
-      /* alternando entre o sol e a lua */
-      const button = document.querySelector("#switch");
-      const moonIcon = document.querySelector(".moon-icon");
-      const sunIcon = document.querySelector(".sun-icon");
-
-      if (button.checked) {
-        moonIcon.style.display = "block";
-        sunIcon.style.display = "none";
-      } else {
-        moonIcon.style.display = "none";
-        sunIcon.style.display = "block";
-      }
-
-      button.addEventListener("click", () => {
-        moonIcon.style.display =
-          moonIcon.style.display === "none" ? "block" : "none";
-
-        sunIcon.style.display =
-          sunIcon.style.display === "block" ? "none" : "block";
-      });
-
-      // alternar arquivos css
+      const button = document.getElementById("button");
       const link = document.getElementById("css");
 
-      switchInput.addEventListener("change", () => {
-        if (link.href.match("../css/login.css")) {
-          link.href = "../css/login-dark.css";
+      button.addEventListener("click", () => {
+        const icon = button.querySelector("i");
+        if (link.getAttribute("href") === "../css/login.css") {
+          link.setAttribute("href", "../css/login-dark.css");
+          icon.classList.replace("fa-moon", "fa-sun");
+          icon.style.transform = "rotate(360deg)";
         } else {
-          link.href = "../css/login.css";
+          link.setAttribute("href", "../css/login.css");
+          icon.classList.replace("fa-sun", "fa-moon");
+          icon.style.transform = "rotate(0deg)";
         }
-        document.querySelector(".moon-icon").classList.toggle("girando");
       });
     </script>
   </body>

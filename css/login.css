@@ -97,66 +97,32 @@ form {
 }
 
 
-/* botão de modo noturno */
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
 
-
-.slider {
-  position: absolute;
+#button {
+  background-color: #ccc; /* Adiciona uma cor de fundo azul */
+  border: none;
   cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 25%;
+  height: 2em;
 }
 
-input:checked + .slider {
-  background-color: #333333;
+#button:hover {
+  transition: 0.4s;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #333333;
+#button:active {
+  box-shadow: 0 0 10px black; /* Adiciona uma sombra quando o botão for clicado */
 }
 
-
-.slider i {
-  color: #000;
-  transition: .4s;
+.icon {
+  transition: transform 0.5s ease;
+  font-size: 1em;
 }
 
-input:checked + .slider i {
-  color: #fff;
-}
-
-
-.sun-icon {
-  display: none;
-}
-
-.moon-icon.girando {
-  transition: transform 0.3s ease-in-out;
-  transform: rotate(300deg);
-}
 
 
 /* imagem preta de fundo */
