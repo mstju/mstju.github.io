@@ -97,14 +97,14 @@ form {
 }
 
 
+/* botão moon */
+
 #email, #password {
   color: #000;
 }
 
-
-
 #button {
-  background-color: #ccc; /* Adiciona uma cor de fundo azul */
+  background-color: #ccc;
   border: none;
   cursor: pointer;
   transition: 0.4s;
@@ -118,7 +118,7 @@ form {
 }
 
 #button:active {
-  box-shadow: 0 0 10px black; /* Adiciona uma sombra quando o botão for clicado */
+  box-shadow: 0 0 10px black; 
 }
 
 .icon {
@@ -141,3 +141,6 @@ form {
   background-color: #f8f9fa!important;
 }
 
+
+
+/*/ Conteudo Principal */

@@ -61,6 +61,7 @@
                       class="form-control form-control-lg"
                       placeholder="Digite seu E-mail"
                       required
+                      autocomplete="off"
                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                     />
 
@@ -70,7 +71,6 @@
                       class="form-control form-control-lg mt-2"
                       placeholder="Digite sua Senha"
                       required
-                   
                     />
                     <input
                       class="btn btn-outline-dark btn-lg px-5 mt-5"
@@ -101,13 +101,17 @@
                 </p>
               </div>
               <button id="button"><i class="fas fa-moon icon"></i></button>
-
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <script>
+      function redirectHome() {
+        window.open("../index.html", "_blank");
+      }
+
       const button = document.getElementById("button");
       const link = document.getElementById("css");
 
