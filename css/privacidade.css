@@ -5,8 +5,19 @@
   box-sizing: border-box;
 }
 
+
+:root {
+--vinho: #640d14;
+--vinho-escuro: #290508;
+--cinza: #ccc;
+--branco: #fff;
+--preto: #000;
+}
+
+
 body {
-  background-color: chocolate;
+  background: var(--cinza);
+  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 
@@ -115,12 +126,7 @@ a.navbar-brand {
 
 /* Footer */
 
-footer {
-  margin-top: 5em;
-  background-color: #640d14;
-  display: flex;
-  justify-content: space-around;
-}
+
 
 ul {
   list-style: none;
@@ -233,13 +239,17 @@ footer ul a {
   text-decoration: none;
 }
 
-.footer {
+footer {
   height: auto;
   line-height: 1.5;
   font-family: "Poppins", sans-serif;
   background-color: #640d14;
   padding: 35px 0;
-  margin-top: 2em;
+  background-color: #640d14;
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
 }
 
 footer section {
@@ -284,37 +294,68 @@ ul,
 ol {
   padding-left: 0;
 }
+/*/ Main /*/
 
-.faq {
-    margin-bottom: 1em;
-  }
+.privacidade {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+/* Estilos gerais */
+.collapsible {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background: none;
+  font-weight: bold;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.4em;
+  transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+   transition: all 0.3s ease-in-out;
+   border: 1px solid var(--vinho);
+   border-radius: 5px;
+ }
+
+.active, .collapsible:hover {
+  color: var(--vinho)
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: var(--vinho)
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 2empx;
+  transform: rotate(0deg);
+  transition: transform 0.4s ease;
   
-  .faq-title {
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .faq-title:hover {
-    color: #0088cc;
-  }
-  
-  .faq-title.active {
-    color: #0088cc;
-  }
-  
-  .faq-answer {
-    display: none;
-    max-height: 0;
-    transition: all 0.5s ease;
-    overflow: hidden;
-  }
-  
-  .faq-answer.initial {
-    display: none;
-  }
-  
-  .faq-answer.show {
-    max-height: 1000px;
-    display: block;
-  }
-  
+}
+
+
+.active:after {
+  transform: rotate(180deg);
+  transition: 0.5s;
+  content: "\2212";
+}
+
+.content {
+  padding-left: 8em;
+  padding-right: 8em;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 1em;
+}
+
+
+.content.show {
+  max-height: 500px; 
+}
