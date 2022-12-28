@@ -5,15 +5,13 @@
   box-sizing: border-box;
 }
 
-
 :root {
---vinho: #640d14;
---vinho-escuro: #290508;
---cinza: #ccc;
---branco: #fff;
---preto: #000;
+  --vinho: #640d14;
+  --vinho-escuro: #290508;
+  --cinza: #ccc;
+  --branco: #fff;
+  --preto: #000;
 }
-
 
 body {
   background: var(--cinza);
@@ -125,8 +123,6 @@ a.navbar-brand {
 }
 
 /* Footer */
-
-
 
 ul {
   list-style: none;
@@ -299,18 +295,19 @@ ol {
 .privacidade {
   display: flex;
   flex-direction: column;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  align-items: center;
+  margin-top: 6em;
+  margin-bottom: 6em;
 }
 
 /* Estilos gerais */
 .collapsible {
+  display: inline-block; /* Define o elemento como um bloco inline */
+  position: relative; /* Define a posição relativa do elemento */
   cursor: pointer;
-  color: rgb(0, 0, 0);
+  color: var(--vinho-escuro);
   background: none;
-  font-weight: bold;
   border: none;
-  text-align: left;
   outline: none;
   font-size: 1.4em;
   transition: 0.4s;
@@ -318,32 +315,45 @@ ol {
   align-items: center;
   justify-content: center;
   margin-top: 1em;
-   transition: all 0.3s ease-in-out;
-   border: 1px solid var(--vinho);
-   border-radius: 5px;
- }
-
-.active, .collapsible:hover {
-  color: var(--vinho)
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid var(--vinho);
+  display: inline-block;
+  width: fit-content;
 }
 
+
+.active,
+.collapsible:hover {
+  color: var(--vinho);
+}
 
 .collapsible:after {
-  content: '\002B';
-  color: var(--vinho)
-  font-weight: bold;
-  margin-left: 5px;
-  font-size: 2empx;
+  content: "\002B";
+  color: var(--vinho);
+  margin-left: 2em;
+  font-size: 1em;
   transform: rotate(0deg);
   transition: transform 0.4s ease;
-  
+  border: 1px solid var(--vinho);
+  border-radius: 50%;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
 }
-
 
 .active:after {
   transform: rotate(180deg);
   transition: 0.5s;
   content: "\2212";
+  border: 1px solid var(--vinho);
+  border-radius: 50%;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
 }
 
 .content {
@@ -352,10 +362,9 @@ ol {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  margin-top: 1em;
+  margin-top: 1.25em;
 }
 
-
 .content.show {
-  max-height: 500px; 
+  max-height: 500px;
 }
