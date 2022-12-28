@@ -361,13 +361,12 @@ ol {
 }
 
 .content {
-  padding-left: 8em;
-  padding-right: 8em;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   margin-top: 1.25em;
-  font-weight: 200;
+  letter-spacing: 1px;
+  width: 50%;
 }
 
 .content.show {
