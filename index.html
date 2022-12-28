@@ -67,48 +67,47 @@
       </div>
     </nav>
     <!--Main-->
-    <div class="container-fluid p-0">
-      <div class="header-content">
-        <div class="container-form">
-          <h2 class="form-title mb-4">Encontre a loja dos seus sonhos!</h2>
-          <form>
-            <select
-              id="cidade"
-              onchange="obterCidade()"
-              class="form-select mb-3 p-2 w-100"
-            >
-              <option value="0" selected>Cidade</option>
-              <option value="1">São Paulo</option>
-            </select>
-            <select
-              id="bairro"
-              onchange="obterBairro(event)"
-              class="form-select mb-3 p-2 w-100"
-            >
-              <option selected>Bairro</option>
-              <option id="districtOption" value=""></option>
-            </select>
-            <select
-              id="valorLocacao"
-              onchange="obterValorLocacao()"
-              class="form-select mb-3 p-2 w-100"
-            >
-              <option value="0" selected>Valor da Locação</option>
-              <option value="1">até R$1.000,00</option>
-              <option value="2">R$1.000,00 a R$2.000,00</option>
-              <option value="3">R$2.0000,00 a R$3.000,00</option>
-              <option value="4">R$3.0000,00 a R$5.000,00</option>
-              <option value="5">R$5.0000,00 a R$7.000,00</option>
-              <option value="6">R$7.0000,00 a R$9.000,00</option>
-              <option value="7">R$10.000,00 a R$15.000,00</option>
-              <option value="8">R$15.000,00 a R$20.000,00</option>
-                <option value="9">mais de R$20.000,00</option>
-            </select>
-            <select
-              id="tamanho"
-              onchange="obterTamanho()"
-              class="form-select mb-3 p-2 w-100"
-            >
+    <div class="header-content">
+      <div class="left">
+        <h2 class="form-title mb-4">Encontre a loja dos seus sonhos</h2>
+        <form>
+          <select
+            id="cidade"
+            onchange="obterCidade()"
+            class="form-select mb-3 p-2 w-100"
+          >
+            <option value="0" selected>Cidade</option>
+            <option value="1">São Paulo</option>
+          </select>
+          <select
+            id="bairro"
+            onchange="obterBairro(event)"
+            class="form-select mb-3 p-2 w-100"
+          >
+            <option selected>Bairro</option>
+            <option id="districtOption" value=""></option>
+          </select>
+          <select
+            id="valorLocacao"
+            onchange="obterValorLocacao()"
+            class="form-select mb-3 p-2 w-100"
+          >
+            <option value="0" selected>Valor da Locação</option>
+            <option value="1">até R$1.000,00</option>
+            <option value="2">R$1.000,00 a R$2.000,00</option>
+            <option value="3">R$2.0000,00 a R$3.000,00</option>
+            <option value="4">R$3.0000,00 a R$5.000,00</option>
+            <option value="5">R$5.0000,00 a R$7.000,00</option>
+            <option value="6">R$7.0000,00 a R$9.000,00</option>
+            <option value="7">R$10.000,00 a R$15.000,00</option>
+            <option value="8">R$15.000,00 a R$20.000,00</option>
+            <option value="9">mais de R$20.000,00</option>
+          </select>
+          <select
+            id="tamanho"
+            onchange="obterTamanho()"
+            class="form-select mb-3 p-2 w-100"
+          >
             <option value="0" selected>Tamanho</option>
             <option value="1">até 20m²</option>
             <option value="2">de 20m² a 50m²</option>
@@ -118,45 +117,43 @@
             <option value="6">de 300m² a 500m²</option>
             <option value="7">de 500m² a 1000m²</option>
             <option value="8">mais de 1000m²</option>
-            </select>
-            <select
-              id="tipo"
-              onchange="obterTipo()"
-              class="form-select mb-3 p-2 w-100"
-            >
+          </select>
+          <select
+            id="tipo"
+            onchange="obterTipo()"
+            class="form-select mb-3 p-2 w-100"
+          >
             <option value="0" selected>Tipo</option>
             <option value="1">Lojas de Shopping / Galerias</option>
             <option value="2">Quiosques</option>
-            <option value="3">Lojas de Alimentação de Shopping / Galerias</option>
+            <option value="3">
+              Lojas de Alimentação de Shopping / Galerias
+            </option>
             <option value="4">Boxes</option>
             <option value="5">Lojas de Rua</option>
             <option value="5">Lojas de Alimentação de Rua</option>
-            </select>
-            <button type="submit" class="btn btn-outline-dark btn-lg px-5 mt-4">
-              Buscar
-            </button>
-          </form>
-        </div>
-        <div class="header-img-content w-100">
-          <img
-            src="../img/index/main.jpg"
-            alt="Mulher sorrindo, segurando sacolas cheias de compras"
-            class="header-img img-fluid w-100"
-          />
-        </div>
+          </select>
+          <button type="submit" class="btn btn-outline-dark btn-lg px-5 mt-4">
+            Buscar
+          </button>
+        </form>
+      </div>
+      <div class="right">
+        <img
+          src="../img/index/main.jpg"
+          alt="Mulher sorrindo, segurando sacolas cheias de compras"
+          class="header-img"
+        />
       </div>
     </div>
 
     <!--Cards-->
+    <h3 class="main-title">
+      Lojas em shoppings centers, centros comerciais, galerias e ruas
+    </h3>
     <div id="area-imoveis">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
-            <h3 class="main-title">
-              Pontos Comerciais em Shopping Centers, Centros Comerciais,
-              Galerias e Rua
-            </h3>
-          </div>
           <div class="col-md-3">
             <div class="card md-3">
               <img
@@ -215,7 +212,6 @@
 
     <!-- Footer-->
     <footer>
-
       <section class="about mt-4">
         <h3 class="text-white fs-5">Sobre Nós</h3>
         <ul>
@@ -251,7 +247,6 @@
           </li>
         </ul>
       </section>
-
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script
