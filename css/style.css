@@ -121,7 +121,6 @@ a.navbar-brand {
   height: 100%;
 }
 
-
 .header-content {
   display: flex;
   align-items: center;
@@ -170,20 +169,23 @@ a.navbar-brand {
 /* Cards */
 
 .main-title {
-  font-size: 1.4rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0;
   padding: 0;
   color: #fff;
   background-color: #640d14;
-  height: 3em;
-  color: white;
+  min-height: 3.5em;
+}
+
+.main-title h3 {
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
-  letter-spacing: 2px;
+  font-size: 1.4rem;
 }
 
 .card-text {
@@ -191,13 +193,16 @@ a.navbar-brand {
 }
 
 .card {
-  margin-top: 2em;
+  margin: 2em 0.5em;
 }
 
+.cards-main {
+  display: flex;
+  justify-content: space-between;
+}
 /* Footer */
 
 footer {
-  margin-top: 5em;
   background-color: #640d14;
   display: flex;
   justify-content: space-around;
@@ -380,6 +385,10 @@ ol {
     width: 100%;
   }
 
+  .left {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -392,5 +401,17 @@ ol {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .cards-main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .cards-main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
   }
 }
