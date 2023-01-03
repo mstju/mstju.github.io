@@ -16,9 +16,8 @@ $(".cpfOuCnpj").length > 11
   : $(".cpfOuCnpj").mask("000.000.000-00#", options);
 
 //máscara data de nascimento
-$(document).ready(function () {
-  $("#data").mask("99/99/9999");
-  return false;
+$(document).ready(function(){
+  $('#data').mask('00/00/0000');
 });
 
 //máscara cep
@@ -93,7 +92,8 @@ function pesquisacep(valor) {
 
 //máscara do telefone
 const celInput = document.getElementById("cel");
-const errorMessage = "Por favor, insira um número de celular válido com 11 dígitos. (DDD + número de celular)";
+const errorMessage =
+  "Por favor, insira um número de celular válido com 11 dígitos. (DDD + número de celular)";
 
 celInput.addEventListener("input", function (event) {
   const value = event.target.value;
@@ -109,13 +109,10 @@ celInput.addEventListener("input", function (event) {
   }
 });
 
-
-
-
 //confirmar se as senhas são iguais:
 function validarCadastro() {
-  var password = document.getElementById("password");
-  var passwordConfirm = document.getElementById("passwordConfirm");
+  var password = document.getElementById("passwordConfirm");
+  var passwordConfirm = document.getElementById("password");
 
   if (password.value === passwordConfirm.value) {
     passwordConfirm.setCustomValidity("");
@@ -126,6 +123,7 @@ function validarCadastro() {
     return false;
   }
 }
+
 //Código para a mensagem sumir quando as senhas forem iguais:
 password.addEventListener("input", validarCadastro);
 

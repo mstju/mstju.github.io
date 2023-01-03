@@ -44,7 +44,7 @@
         class="logo"
         alt="Voltar para a página inicial"
       />
-      <form id="formSenha" onsubmit="return validarFormulario();">
+      <form id="formSenha">
         <section class="nomeCompleto">
           <input
             type="text"
@@ -72,7 +72,7 @@
           />
         </section>
 
-        <section class="cel ">
+        <section class="cel">
           <input
             type="text"
             id="cel"
@@ -90,6 +90,9 @@
             type="text"
             id="data"
             name="data"
+            pattern="\d{2}/\d{2}/\d{4}"
+            maxlength="10"
+            title="O formato da data deve ser DD/MM/AAAA"
             placeholder="Data de Nascimento"
             class="dataC form-control form-control-lg"
             required
