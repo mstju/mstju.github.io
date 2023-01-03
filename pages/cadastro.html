@@ -28,7 +28,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <!--Meu JS-->
-    <script src="../js/cadastro.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -49,14 +48,14 @@
         <section class="nomeCompleto">
           <input
             type="text"
-            id="name"
+            id="nome"
             class="nome form-control form-control-lg col-4"
             placeholder="Nome"
             required
           />
           <input
             type="text"
-            id="name"
+            id="sobrenome"
             class="sobrenome form-control form-control-lg col-4"
             placeholder="Sobrenome"
             required
@@ -66,7 +65,7 @@
           type="email"
           id="email"
           name="email"
-          class=" form-control form-control-lg"
+          class="form-control form-control-lg"
           placeholder="Digite seu e-mail"
           required
         />
@@ -79,6 +78,8 @@
             placeholder="Digite seu Número de celular"
             class="tel form-control form-control-lg"
             required
+            minlength="11"
+            maxlength="11"
           />
 
           <section class="dataCPF">
@@ -87,7 +88,7 @@
               id="data"
               name="data"
               placeholder="Data de Nascimento"
-              class="dataC  form-control form-control-lg"
+              class="dataC form-control form-control-lg"
               required
             />
 
@@ -95,7 +96,7 @@
               type="text"
               id="cpfOuCnpj"
               name="cpfOuCnpj"
-              class="dataC  form-control form-control-lg cpfOuCnpj"
+              class="dataC form-control form-control-lg cpfOuCnpj"
               placeholder="CPF ou CNPJ"
               required
             />
@@ -105,7 +106,7 @@
               type="password"
               id="password"
               name="senha"
-              class="password  form-control form-control-lg"
+              class="password form-control form-control-lg"
               placeholder="Digite a sua senha"
               required
             />
@@ -113,7 +114,7 @@
               type="password"
               id="passwordConfirm"
               name="passwordConfirm"
-              class="password  form-control form-control-lg"
+              class="password form-control form-control-lg"
               placeholder="Repita a sua senha"
               required
             />
@@ -124,7 +125,7 @@
               onblur="pesquisacep(this.value);"
               id="cep"
               name="cep"
-              class="cep  form-control form-control-lg"
+              class="cep form-control form-control-lg"
               placeholder="CEP"
               required
             />
@@ -132,7 +133,7 @@
               type="text"
               id="uf"
               name="uf"
-              class="uf  form-control form-control-lg"
+              class="uf form-control form-control-lg"
               placeholder="UF"
               required
             />
@@ -140,7 +141,7 @@
               type="text"
               id="numero"
               name="numero"
-              class="numero  form-control form-control-lg"
+              class="numero form-control form-control-lg"
               placeholder="Número"
               required
             />
@@ -149,7 +150,7 @@
             type="text"
             id="bairro"
             name="bairro"
-            class="bairro  form-control form-control-lg"
+            class="bairro form-control form-control-lg"
             placeholder="Bairro"
             required
           />
@@ -157,7 +158,7 @@
             type="text"
             id="cidade"
             name="cidade"
-            class=" form-control form-control-lg"
+            class="form-control form-control-lg"
             placeholder="Cidade"
             required
           />
@@ -165,16 +166,15 @@
             type="text"
             id="rua"
             name="rua"
-            class="rua  form-control form-control-lg"
+            class="rua form-control form-control-lg colored"
             placeholder="Rua"
             required
           />
 
           <input
             class="btn btn-outline-dark btn-lg px-5 mt-3"
-            data-mask="(00) 00000-0000" 
+            data-mask="(00) 00000-0000"
             type="submit"
-            ondblclick="validarTel()"
             onclick="validarCadastro()"
             value="Cadastrar"
             id="submit-login"
@@ -185,29 +185,14 @@
         <p class="text-links">
           <a class="links" href="./forgot.html">Esqueci minha senha</a>
         </p>
-        <p class="text-links fw-bold">
+        <p class="text-links">
           Já possui uma conta?
-          <a class="links"href="../pages/login.html">Entre</a>
+          <a class="links fw-bold" href="../pages/login.html">Entre</a>
         </p>
         <button id="button"><i class="fas fa-moon icon"></i></button>
       </div>
     </div>
-    <script>
-      const button = document.getElementById("button");
-      const link = document.getElementById("css");
 
-      button.addEventListener("click", () => {
-        const icon = button.querySelector("i");
-        if (link.getAttribute("href") === "../css/cadastro.css") {
-          link.setAttribute("href", "../css/cadastro-dark.css");
-          icon.classList.replace("fa-moon", "fa-sun");
-          icon.style.transform = "rotate(360deg)";
-        } else {
-          link.setAttribute("href", "../css/cadastro.css");
-          icon.classList.replace("fa-sun", "fa-moon");
-          icon.style.transform = "rotate(0deg)";
-        }
-      });
-    </script>
+    <script src="../js/cadastro.js"></script>
   </body>
 </html>

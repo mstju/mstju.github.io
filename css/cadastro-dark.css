@@ -52,10 +52,28 @@ body {
   margin-bottom: 1%;
 }
 
+#nome,
+#sobrenome,
+#email,
+#cel,
+#data,
+#cep,
+#data,
+#cpfOuCnpj,
+#passwordConfirm,
+#password,
+#cep,
+#uf,
+#bairro,
+#cidade,
+#numero,
+#rua {
+  color: var(--branco);
+}
+
 .links {
   text-decoration: none;
   color: var(--preto);
-  font-weight: bold;
 }
 
 .links:hover {

@@ -1,73 +1,3 @@
-// const form = document.getElementById('form')
-// const username = document.getElementById('username')
-// const email = document.getElementById('email')
-// const password = document.getElementById('password')
-// const passwordConfirm = document.getElementById('passwordConfirm')
-
-// form.addEventListener('submit', (e) =>{
-//    e.preventDefault()
-
-//    checkInputs()
-
-// })
-
-// function checkInputs(){
-//    const usernameValue = username.value.trim()
-//    const emailValue = email.value.trim()
-//    const passwordValue = password.value.trim()
-//    const passwordConfirmValue = passwordConfirm.value.trim()
-
-//    if(usernameValue === ''){
-
-//       errorValidation(username, "Preencha esse campo")
-//    }else{
-//       successValidation(username)
-//    }
-
-//    if(emailValue === ''){
-//       errorValidation(email, "Preencha esse campo")
-//    }else if (validateEmail(emailValue) == false){
-//       errorValidation(email, "Email digitado errado.")
-//    }else{
-//       successValidation(email)
-//    }
-
-//    if(passwordValue === ''){
-//       errorValidation(password, "Preencha esse campo")
-//    }else if (passwordValue.length < 8){
-//       errorValidation(password, "A senha dever ter mais de 8 caracteres")
-//    }else{
-//       successValidation(password)
-//    }
-
-//    if(passwordConfirmValue === ''){
-//       errorValidation(passwordConfirm, "Preencha esse campo")
-//    }else if (passwordConfirmValue !== passwordValue){
-//       errorValidation(passwordConfirm, "Senha diferente. Por favor, digitar novamente.")
-//    }else{
-//       successValidation(passwordConfirm)
-//    }
-
-// }
-
-// function errorValidation(input, message){
-//    const formControl = input.parentElement
-//    const small = formControl.querySelector('small')
-
-//    small.innerText = message
-//    formControl.className = 'form-control error'
-// }
-
-// function successValidation(input){
-//    const formControl = input.parentElement
-
-//    formControl.className = 'form-control success'
-// }
-
-// function validateEmail(input) {
-//    return /\S+@\S+\.\S+/.test(input);
-// }
-
 //função que redireciona pra home
 function redirectHome() {
   window.open("../index.html", "_blank");
@@ -93,9 +23,9 @@ $(document).ready(function () {
 
 //máscara cep
 $(document).ready(function () {
-   $("#cep").mask("00000-000");
-   return false;
- });
+  $("#cep").mask("00000-000");
+  return false;
+});
 
 //
 
@@ -114,6 +44,7 @@ function meu_callback(conteudo) {
     document.getElementById("bairro").value = conteudo.bairro;
     document.getElementById("cidade").value = conteudo.localidade;
     document.getElementById("uf").value = conteudo.uf;
+    document.getElementById("numero").focus();
   } //end if.
   else {
     //se o CEP não for encontrado.
@@ -133,7 +64,7 @@ function pesquisacep(valor) {
 
     //Valida o formato do CEP.
     if (validacep.test(cep)) {
-      //Preenche os campos com "..." enquanto consulta webservice.
+      //Preenche os campos com "..." enquanto consulta
       document.getElementById("rua").value = "...";
       document.getElementById("bairro").value = "...";
       document.getElementById("cidade").value = "...";
@@ -148,8 +79,7 @@ function pesquisacep(valor) {
 
       //Insere script no documento e carrega o conteúdo.
       document.body.appendChild(script);
-    } //end if.
-    else {
+    } else {
       //cep é inválido.
       limpa_formulário_cep();
       alert("Formato de CEP inválido.");
@@ -161,47 +91,45 @@ function pesquisacep(valor) {
   }
 }
 
-//máscara número de telefone
-$(document).ready(function() {
-  $("#cel").mask("(00) 0000-00009");
-//adicionando o formato com 9 digitos
-$("#cel").blur(function() {
-    if ($(this).val().length ==15){
-      $("#cel").mask("(00) 00000-0009");
-    }else{
-      $("#cel").mask("(00) 0000-00009");
-    }
-  })
-//Validando se o número possui 9 digitos:
-function validarTel() {
-  var telefone = document.getElementById('cel');
+//máscara do telefone
+const celInput = document.getElementById("cel");
 
-  if (telefone.value.length == 15) {
-    telefone.setCustomValidity('');
-    return true;
-  } else {
-    telefone.setCustomValidity('O número de celular deve ter o formato: (XX) 9XXXX-XXXX');
-    telefone.reportValidity();
-    return false;
-  }
-}
-password.addEventListener('input',validarTel);
-})
+celInput.addEventListener("input", function (event) {
+  const value = event.target.value;
+  const formattedValue = value.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+  event.target.value = formattedValue;
+});
 
 //confirmar se as senhas são iguais:
 function validarCadastro() {
-  
-  var password = document.getElementById('password');
-  var passwordConfirm = document.getElementById('passwordConfirm');
+  var password = document.getElementById("password");
+  var passwordConfirm = document.getElementById("passwordConfirm");
 
   if (password.value === passwordConfirm.value) {
-    passwordConfirm.setCustomValidity('');
+    passwordConfirm.setCustomValidity("");
     return true;
   } else {
-    passwordConfirm.setCustomValidity('As senhas devem ser iguais');
+    passwordConfirm.setCustomValidity("As senhas devem ser iguais");
     passwordConfirm.reportValidity();
     return false;
   }
 }
 //Código para a mensagem sumir quando as senhas forem iguais:
-password.addEventListener('input',validarCadastro);
+password.addEventListener("input", validarCadastro);
+
+//botão day/night
+const button = document.getElementById("button");
+const link = document.getElementById("css");
+
+button.addEventListener("click", () => {
+  const icon = button.querySelector("i");
+  if (link.getAttribute("href") === "../css/cadastro.css") {
+    link.setAttribute("href", "../css/cadastro-dark.css");
+    icon.classList.replace("fa-moon", "fa-sun");
+    icon.style.transform = "rotate(360deg)";
+  } else {
+    link.setAttribute("href", "../css/cadastro.css");
+    icon.classList.replace("fa-sun", "fa-moon");
+    icon.style.transform = "rotate(0deg)";
+  }
+});
