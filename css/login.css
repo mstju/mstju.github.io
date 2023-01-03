@@ -77,12 +77,14 @@ form {
   transform: translateX(-50%);
 }
 
-/* botão moon */
+
 
 #email,
 #password {
   color: #000;
 }
+
+/* botão moon */
 
 #button {
   background-color: #ccc;
