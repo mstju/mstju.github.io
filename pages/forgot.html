@@ -61,7 +61,7 @@
                   alt="Voltar para a página inicial"
                 />
                 <h2 class="text-black fs-5 mb-3">Esqueceu sua senha?</h2>
-                <form>
+                <form id="form-email">
                   <input
                     type="email"
                     id="email"
@@ -93,7 +93,7 @@
                 <p class="mb-0 text-black">
                   Já possui uma conta?
                   <a
-                    href="../pages/cadastro.html"
+                    href="../pages/login.html"
                     class="links links-color fw-bold"
                     >Entre</a
                   >
@@ -104,5 +104,15 @@
         </div>
       </div>
     </div>
+    <script>
+      const form = document.getElementById("form-email");
+      const emailInput = document.getElementById("email");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const email = emailInput.value;
+        alert(`Enviaremos um e-mail de confirmação para o endereço de e-mail ${email}.`);
+      });
+    </script>
   </body>
 </html>
