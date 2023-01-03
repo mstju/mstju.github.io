@@ -93,12 +93,24 @@ function pesquisacep(valor) {
 
 //máscara do telefone
 const celInput = document.getElementById("cel");
+const errorMessage = "Por favor, insira um número de celular válido com 11 dígitos. (DDD + número de celular)";
 
 celInput.addEventListener("input", function (event) {
   const value = event.target.value;
   const formattedValue = value.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
   event.target.value = formattedValue;
+
+  if (formattedValue.length === 15) {
+    // Oculta a mensagem de erro se o número de celular for válido
+    celInput.setCustomValidity("");
+  } else {
+    // Exibe a mensagem de erro se o número de celular for inválido
+    celInput.setCustomValidity(errorMessage);
+  }
 });
+
+
+
 
 //confirmar se as senhas são iguais:
 function validarCadastro() {

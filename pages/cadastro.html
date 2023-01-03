@@ -61,16 +61,18 @@
             required
           />
         </section>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="form-control form-control-lg"
-          placeholder="Digite seu e-mail"
-          required
-        />
+        <section class="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control form-control-lg"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </section>
 
-        <section class="cel">
+        <section class="cel ">
           <input
             type="text"
             id="cel"
@@ -78,74 +80,76 @@
             placeholder="Digite seu Número de celular"
             class="tel form-control form-control-lg"
             required
-            minlength="11"
-            maxlength="11"
+            maxlength="15"
+            minlength="15"
+          />
+        </section>
+
+        <section class="dataCPF">
+          <input
+            type="text"
+            id="data"
+            name="data"
+            placeholder="Data de Nascimento"
+            class="dataC form-control form-control-lg"
+            required
           />
 
-          <section class="dataCPF">
-            <input
-              type="text"
-              id="data"
-              name="data"
-              placeholder="Data de Nascimento"
-              class="dataC form-control form-control-lg"
-              required
-            />
-
-            <input
-              type="text"
-              id="cpfOuCnpj"
-              name="cpfOuCnpj"
-              class="dataC form-control form-control-lg cpfOuCnpj"
-              placeholder="CPF ou CNPJ"
-              required
-            />
-          </section>
-          <section class="senha">
-            <input
-              type="password"
-              id="password"
-              name="senha"
-              class="password form-control form-control-lg"
-              placeholder="Digite a sua senha"
-              required
-            />
-            <input
-              type="password"
-              id="passwordConfirm"
-              name="passwordConfirm"
-              class="password form-control form-control-lg"
-              placeholder="Repita a sua senha"
-              required
-            />
-          </section>
-          <section class="endereco">
-            <input
-              type="text"
-              onblur="pesquisacep(this.value);"
-              id="cep"
-              name="cep"
-              class="cep form-control form-control-lg"
-              placeholder="CEP"
-              required
-            />
-            <input
-              type="text"
-              id="uf"
-              name="uf"
-              class="uf form-control form-control-lg"
-              placeholder="UF"
-              required
-            />
-            <input
-              type="text"
-              id="numero"
-              name="numero"
-              class="numero form-control form-control-lg"
-              placeholder="Número"
-              required
-            />
-          </section>
+          <input
+            type="text"
+            id="cpfOuCnpj"
+            name="cpfOuCnpj"
+            class="dataC form-control form-control-lg cpfOuCnpj"
+            placeholder="CPF ou CNPJ"
+            required
+          />
+        </section>
+        <section class="senha">
+          <input
+            type="password"
+            id="password"
+            name="senha"
+            class="password form-control form-control-lg"
+            placeholder="Digite a sua senha"
+            required
+          />
+          <input
+            type="password"
+            id="passwordConfirm"
+            name="passwordConfirm"
+            class="password form-control form-control-lg"
+            placeholder="Repita a sua senha"
+            required
+          />
+        </section>
+        <section class="endereco">
+          <input
+            type="text"
+            onblur="pesquisacep(this.value);"
+            id="cep"
+            name="cep"
+            class="cep form-control form-control-lg"
+            placeholder="CEP"
+            required
+          />
+          <input
+            type="text"
+            id="uf"
+            name="uf"
+            class="uf form-control form-control-lg"
+            placeholder="UF"
+            required
+          />
+          <input
+            type="text"
+            id="numero"
+            name="numero"
+            class="numero form-control form-control-lg"
+            placeholder="Número"
+            required
+          />
+        </section>
+        <section class="enderecoCont">
           <input
             type="text"
             id="bairro"
@@ -170,16 +174,14 @@
             placeholder="Rua"
             required
           />
-
-          <input
-            class="btn btn-outline-dark btn-lg px-5 mt-3"
-            data-mask="(00) 00000-0000"
-            type="submit"
-            onclick="validarCadastro()"
-            value="Cadastrar"
-            id="submit-login"
-          />
         </section>
+        <input
+          class="btn btn-outline-dark btn-lg px-5 mt-3"
+          type="submit"
+          onclick="validarCadastro()"
+          value="Cadastrar"
+          id="submit-login"
+        />
       </form>
       <div class="text-form">
         <p class="text-links">
