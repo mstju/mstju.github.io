@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --vinho: #640d14;
+  --vinho-escuro: #290508;
+  --cinza: #ccc;
+  --branco: #fff;
+  --preto: #000;
+  --fundo-form: #f8f9fa;
+  --vermelho: red;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/fundo/dark-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 15% !important;
+}
+
+.container-fluid {
+  background-color: #a9a9a9;
+  width: 40%;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  border-radius: 2rem;
+  padding: 1%;
+}
+
+.text-form {
+  text-align: center;
+}
+
+.text-links {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#nome,
+#sobrenome,
+#email,
+#cel,
+#data,
+#cep,
+#data,
+#cpfOuCnpj,
+#passwordConfirm,
+#password,
+#cep,
+#uf,
+#bairro,
+#cidade,
+#numero,
+#rua {
+  color: var(--branco);
+}
+
+.links {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.links:hover {
+  color: var(--preto);
+  transition: 0.5s;
+}
+
+.form-control {
+  background-color: rgb(32, 32, 32);
+  border: none;
+}
+
+.form-control:focus {
+  background-color: rgb(32, 32, 32);
+  border: 1px solid white;
+  box-shadow: inset 0 1px 1px white, 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.btn:hover {
+  transition: 0.8s;
+}
+
+.img-fluid {
+  width: 15% !important;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+input {
+  margin-top: 0.5%;
+}
+
+form {
+  text-align: left;
+}
+
+#submit-login {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.nome,
+.sobrenome,
+.password,
+.telefone,
+.dataC {
+  width: 49.5%;
+}
+
+.cep,
+.uf,
+.numero {
+  width: 32.3%;
+}
+
+.senha,
+.dataCPF,
+.nomeCompleto,
+.endereco {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media queries do formulário */
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container-fluid {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+  .container-fluid {
+    width: 90%;
+  }
+  .logo {
+    width: 20% !important;
+  }
+}
+
+#button {
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 34px;
+  width: 25%;
+  height: 2em;
+}
+
+#button:hover {
+  transition: 0.4s;
+}
+
+#button:active {
+  box-shadow: 0 0 10px black;
+}
+
+.icon {
+  transition: transform 0.5s ease;
+  font-size: 1em;
+}

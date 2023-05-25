@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: url(../img/fundo/dark-bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+}
+
+:root {
+  --vinho: #640d14;
+  --vinho-escuro: #290508;
+  --cinza: #ccc;
+  --branco: #fff;
+  --preto: #000;
+}
+
+.links-register {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.register {
+  text-decoration: none;
+}
+
+.form-control {
+  background-color: rgb(32, 32, 32);
+  border: none;
+}
+
+.form-control:focus {
+  background-color: rgb(32, 32, 32);
+  border: 1px solid white;
+  box-shadow: inset 0 1px 1px white, 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.btn:hover {
+  transition: 0.8s;
+}
+
+.card {
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 22px 5px rgba(0, 0, 0, 0.55);
+  border: 2px solid #000;
+}
+
+.login-bg {
+  background-color: #a9a9a9 !important;
+}
+
+.links-register:hover {
+  color: var(--preto);
+  transition: 0.6s;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+
+#email,
+#password {
+  color: white;
+}
+
+form {
+  text-align: left;
+}
+
+#submit-login {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#button {
+  background-color: rgb(32, 32, 32);
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 34px;
+  width: 25%;
+  height: 2em;
+}
+
+#button:hover {
+  transition: 0.4s;
+}
+
+#button:active {
+  box-shadow: 0 0 px rgb(255, 255, 255);
+}
+
+.icon {
+  transition: transform 0.5s ease;
+  font-size: 1em;
+  color: white;
+}
